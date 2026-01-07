@@ -4,9 +4,8 @@
     box-sizing: border-box;
 }
 
-s
 
-.hero-image {
+.hero-image{
     background: fixed;
     background-image: url("../assets/rado_hero.jpeg");
     background-size: cover;
@@ -31,4 +30,17 @@ s
 
 body{
     font-family: "Barlow", sans-serif;
+}
+
+
+/* home */
+.home-hero{
+    background: fixed;
+    background-image: url("../assets/Banner\ 1.jpg");
+    background-size: cover;
+}
+.sec-41{
+    background-image: url("../assets/Love.png");
+    background-size: cover;
+
 }
