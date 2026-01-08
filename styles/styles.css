@@ -39,8 +39,40 @@ body{
     background-image: url("../assets/Banner\ 1.jpg");
     background-size: cover;
 }
+/* section-3 */
+.sec-3{
+    background: fixed;
+    background-image: url("../assets/Banner\ 1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .sec-41{
     background-image: url("../assets/Love.png");
-    background-size: cover;
-
+    background-size: contain;
+    background-position:  center;
+    background-repeat: no-repeat;
 }
+.img-gallery:hover{
+    background-color: rgb(225, 225, 225, 0.8);
+}
+
+@keyframes work {
+    0% {
+        transform: translateX(0);
+    }
+    /* 25%{
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-200%);
+    }
+    75% {
+        transform: translateX(-300%);
+    } */
+    100% {
+        transform: translateX(-400%);
+    }
+}
+
+/* footer */
