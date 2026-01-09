@@ -17,28 +17,48 @@
 </head>
 
 <body>
-    <!-- menu -->
-    <div id="mobile-menu" class="hidden">
-        <ul class="flex flex-col space-y-4 mt-4 text-center">
-            <li><a href="#" class="block hover:text-blue-500">HOME</a></li>
-            <li><a href="#" class="block hover:text-blue-500">ABOUT US</a></li>
-            <li><a href="#" class="block hover:text-blue-500">SERVICES</a></li>
-            <li><a href="#" class="block hover:text-blue-500">CASE STUDY</a></li>
-            <li><a href="#" class="block hover:text-blue-500">CONNECT</a></li>
-            <li><a href="#" class="block hover:text-blue-500">BLOG</a></li>
-        </ul>
-    </div>
-    <div class="home-hero h-dvh bg-black container mx-auto px-4 md:px-6 lg:px-8 md:py-6">
-        <div class="nav flex flex-row justify-between items-center">
+    <!-- <div class="nav bg-transparent md:py-4 flex flex-row justify-between items-center shadow-xl">
             <div>
                 <img src="assets/logo.svg" alt="" class="w-40">
             </div>
             <div class="md:flex space-x-10">
                 <div class="hidden lg:block">
                     <ul class="flex space-x-6">
-                        <li class="text-sm text-black">+1 (408) 775 9573</li>
-                        <li class="text-sm text-black">+91 9884072469</li>
-                        <li class="text-sm text-black">info@scarecrowproduction.com</li>
+                        <li class="md:text-md text-black">+1 (408) 775 9573</li>
+                        <li class="md:text-md text-black">+91 9884072469</li>
+                        <li class="md:text-[17px] text-black">info@scarecrowproduction.com</li>
+                    </ul>
+                </div>
+                <div id="menu-btn" class="block">
+                    <span class="material-symbols-outlined text-b">
+                        menu
+                    </span>
+                </div>
+            </div>
+        </div> -->
+    <div class="home-hero h-dvh">
+        <!-- menu -->
+
+        <div id="mobile-menu" class="hidden bg-transparent absolute top-0 right-0 ">
+            <ul class="block space-y-4 mt-4 text-cente p-10 bg-black">
+                <li class="hover:font-bold"><a href="#" class="text-gray-400 hover:font-bold">HOME</a></li>
+                <li><a href="#" class=" text-gray-400">ABOUT US</a></li>
+                <li><a href="#" class="text-gray-400 ">SERVICES</a></li>
+                <li><a href="/index.html" class="text-gray-400">CASE STUDY</a></li>
+                <li><a href="#" class="text-gray-400 ">CONNECT</a></li>
+                <li><a href="#" class=" text-gray-400">BLOG</a></li>
+            </ul>
+        </div>
+        <div class="nav fixed top-0 right-0 left-0 md:py-4 flex flex-row justify-between px-12 items-center shadow-xl">
+            <div>
+                <img src="assets/logo.svg" alt="" class="w-40">
+            </div>
+            <div class="md:flex space-x-10">
+                <div class="hidden lg:block">
+                    <ul class="flex space-x-6">
+                        <li class="md:text-md text-black hover:font-semibold">+1 (408) 775 9573</li>
+                        <li class="md:text-md text-black hover:font-semibold">+91 9884072469</li>
+                        <li class="md:text-[17px] text-black hover:font-semibold">info@scarecrowproduction.com</li>
                     </ul>
                 </div>
                 <div id="menu-btn" class="block">
@@ -48,13 +68,17 @@
                 </div>
             </div>
         </div>
-        <div class="h-dvh container mx-auto px-4 md:px-6 lg:px-8 flex  justify-start">
-            <div class="md:w-1/2 pt-30 md:pt-40 pl-10 md:pl-20">
-                <!-- <h5 class=" mb-6 md:mb-12 text-sm md:text-l font-bold text-black">WHO WE ARE</h5> -->
+        <div class="h-dvh container mx-auto px-8 md:px-12 lg:px-16 flex  justify-start">
+            <!-- <div class="md:w-1/2 pt-30 md:pt-40 pl-10 md:pl-20"> -->
+            <div class="md:w-1/2 flex flex-col justify-center pt-30 md:gap-y-8 lg:gap-y-15">
+                <!-- <h5 class="mb-6 md:mb-12 text-sm md:text-l font-bold text-black">WHO WE ARE</h5> -->
                 <p
-                    class="md:w-5/6 text-xl md:text-3xl lg:text-3xl font-extralight text-black leading-9 md:leading-9 lg:leading-9">
-                    Where innovative ideas meet <span class="font-bold">impactful designs</span> to create lasting
+                    class="md:w-5/6 text-xl md:text-3xl lg:text-3xl font-extralight text-black leading-9 md:leading-9 lg:leading-10">
+                    Where innovative ideas meet <span class="font-semibold">impactful designs</span> to create lasting
                     impressions.</p>
+                <button class="me-auto rounded-sm bg-black text-gray-400 py-1 px-4 hover:bg-gray-300 hover:text-black">
+                    <a href="#" class="text-sm md:text- ">VIEW MORE</a>
+                </button>
             </div>
             <!-- <div class="w-1/2 ">
                 <img src="assets/post.png" alt="" class="object-fit-cover w-[500px] h-[500px]">
@@ -65,13 +89,15 @@
     <!-- about -->
     <section>
         <div class="container mx-auto px-4 md:px-6 lg:px-8">
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8 mb-20 md:my-50 text-center lg:max-w-4/5">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 my-20 md:my-50 text-center lg:max-w-4/5">
                 <h5 class="mb-6 md:mb-12 text-sm md:text-l font-bold">WHO WE ARE</h5>
                 <!-- <h1 class="text-center text-2xl md:text-4xl font-extrabold py-8 md:py-20">WHO WE ARE </h1> -->
                 <p class="text-xl md:text-2xl lg:text-3xl font-extralight leading-7 md:leading-8 lg:leading-9">A team of
                     passionate creatives blending tradition with innovation, delivering solutions that matter."We
-                    believe in turning visions into realities, where every project reflects excellence and emotion."To
-                    deliver designs, campaigns, and stories that truly represent your brand’s voice..
+                    believe in <span class="font-semibold">turning visions</span> into realities, where every project
+                    reflects excellence and emotion."To
+                    <span class="font-semibold">deliver designs, </span>campaigns and stories that truly represent your
+                    brand’s voice..
                 </p>
             </div>
         </div>
@@ -79,53 +105,56 @@
 
     <!-- section-2 -->
     <section>
-        <div class="container mx-auto px-4 md:px-6 lg:px-8">
-            <div class="bg">
-                <img src="assets/rado_desktop_5.jpeg" alt="">
+        <div class="container-5xl mx-auto px-4 md:px-6 lg:px-8 overflow-hidden">
+            <div class="container-5xl flex">
+                <img src="assets/carousel.jpg" alt="" class="flex-shrink-0 object-fit-cover">
+                <!-- <img src="assets/rado_desktop_3.jpeg" alt="" class="flex-shrink-0">
+                <img src="assets/rado_desktop_4.jpeg" alt="" class="flex-shrink-0"> -->
             </div>
         </div>
     </section>
 
     <!-- section-3 -->
     <section>
-        <div class="sec-3 container mx-auto px-4 sm:px-6 lg:px-8 mb-10 md:my-25 py-10 md:py-25">
+        <div class="sec-3 mb-10 md:my-25 py-10 md:py-25">
             <!-- <h1 class="text-center text-2xl md:text-4xl font-extrabold py-10 md:py-30">OUR SERVICES</h1> -->
             <!-- <h5 class="mb-6 md:mb-12 text-sm md:text-l text-center font-bold py-10 md:pt-20">OUR SERVICES</h5> -->
-            <div class="block md:grid lg:grid-cols-3 lg:grid-rows-2 md:grid-cols-2 md:grid-rows-2 gap-5">
+            <div
+                class="container mx-auto px-4 sm:px-6 lg:px-8 block md:grid lg:grid-cols-3 lg:grid-rows-2 md:grid-cols-2 md:grid-rows-2 gap-5">
                 <div class="text-start mb-4 md:mb-0 p-6 md:p-10">
-                    <h5 class="mb-2 md:mb-4 text-sm md:text-l font-bold">Brand Alchemy </h5>
+                    <h5 class="mb-2 md:mb-4 text-sm md:text-l font-bold">BRAND ALCHMEY</h5>
                     <p class="text-lg md:text-2xl lg:text-3xl font-extralight leading-7 md:leading-8 lg:leading-9">
                         Logos & Identities that resonate..
                     </p>
 
                 </div>
                 <div class="text-start mb-4 md:mb-0 p-6 md:p-10">
-                    <h5 class="mb-2 md:mb-4 text-sm md:text-l font-bold">Digital Realms </h5>
+                    <h5 class="mb-2 md:mb-4 text-sm md:text-l font-bold">DIGITAL REALMS</h5>
                     <p class="text-lg md:text-2xl lg:text-3xl font-extralight leading-7 md:leading-8 lg:leading-9">
                         Bespoke Web & App Designs.
                     </p>
 
                 </div>
                 <div class="text-start mb-4 md:mb-0 p-6 md:p-10">
-                    <h5 class="mb-2 md:mb-4 text-sm md:text-l font-bold">Engagement Strategies</h5>
+                    <h5 class="mb-2 md:mb-4 text-sm md:text-l font-bold">ENGAGEMENT STRATERGIES</h5>
                     <p class="text-lg md:text-2xl lg:text-3xl font-extralight leading-7 md:leading-8 lg:leading-9">
                         UI/UX Designs that captivate.
                     </p>
                 </div>
                 <div class="text-start mb-4 md:mb-0 p-6 md:p-10">
-                    <h5 class="mb-2 md:mb-4 text-sm md:text-l font-bold">Visual Narratives</h5>
+                    <h5 class="mb-2 md:mb-4 text-sm md:text-l font-bold">VISUAL NARRATIVES</h5>
                     <p class="text-lg md:text-2xl lg:text-3xl font-extralight leading-7 md:leading-8 lg:leading-9">
                         Film & Video Editing with soul.
                     </p>
                 </div>
                 <div class="text-start mb-4 md:mb-0 p-6 md:p-10">
-                    <h5 class="mb-2 md:mb-4 text-sm md:text-l font-bold">Artistic Expressions</h5>
+                    <h5 class="mb-2 md:mb-4 text-sm md:text-l font-bold">ARTISTIC EXPRESSIONS</h5>
                     <p class="text-lg md:text-2xl lg:text-3xl font-extralight leading-7 md:leading-8 lg:leading-9">
                         Packaging, Labeling, and Merchandise.
                     </p>
                 </div>
                 <div class="text-start mb-4 md:mb-0 p-6 md:p-10">
-                    <h5 class="mb-2 md:mb-4 text-sm md:text-l font-bold">Printed Legacies </h5>
+                    <h5 class="mb-2 md:mb-4 text-sm md:text-l font-bold">PRINTED LEGACIES</h5>
                     <p class="text-lg md:text-2xl lg:text-3xl font-extralight leading-7 md:leading-8 lg:leading-9">
                         Books, Magazines, and timeless illustrations.
                     </p>
@@ -194,20 +223,20 @@
         <div class=" container mx-auto px-4 sm:px-6 lg:px-8 mb-10 md:mb-25 pb-10 md:pb-25">
             <h5 class="text-black mb-6 md:mb-12 text-sm md:text-l text-center font-bold py-10 md:pt-20">CASE STUDIES
             </h5>
-            <div class="bg-white shadow-xl shadow-slate-300 max-w-5xl mx-auto flex">
-                <div class="block md:flex overflow-hidden">
-                    <div class="w-3/5">
-                        <img src="assets/55.jpg" alt="" class="object-fit-contain">
+            <div class="bg-white shadow-xl  max-w-5xl mx-auto flex">
+                <div class="block lg:flex overflow-hidden">
+                    <div class="lg:w-3/5 bg-black">
+                        <img src="assets/Love.png" alt="" class="object-fit-contain">
                     </div>
-                    <div class="flex flex-col justify-center w-2/5">
+                    <div class="flex flex-col justify-center lg:w-2/5 p-4 md:py-14 lg:py-0">
                         <div class="text-black flex flex-col md:px-10">
                             <!-- <h5 class="mb-6 md:mb-12 text-sm md:text-l font-bold">Printed Legacies </h5> -->
                             <p
-                                class="text-lg md:text-2xl lg:text-3xl font-extralight leading-7 md:leading-8 lg:leading-9">
-                                Books, Magazines.
+                                class="text-2xl md:text-3xl lg:text-3xl font-extralight leading-6 md:leading-8 lg:leading-9">
+                                Info Technology
                             </p>
                             <p
-                                class="text-xl md:text-2xl lg:text-xl text-gray-700 font-light leading-9 md:leading-8 pt-10">
+                                class="text-xl md:text-2xl lg:text-xl text-gray-700 font-light leading-9 md:leading-8 pt-4 md:pt-10">
                                 This project aimed to develop the website’s eCommerce functionality and content
                                 management, increase brand awareness with updated content
                             </p>
@@ -220,57 +249,98 @@
                 </div>
             </div>
         </div>
-
     </section>
 
     <!-- section-5 -->
-    <section>
-        <div class="container mx-auto  px-4 sm:px-6 lg:px-8 mb-10 md:mb-25 pb-10 md:pb-25">
-            <div class="max-w-5xl mx-auto md:grid md:grid-cols-3 gap-y-10">
-                <div class="">
-                    <img src="assets/logo.svg" alt="" class="w-40 mx-auto">
+    <section class="blog">
+        <div class=" container w-4xl mx-auto px-4 sm:px-6 lg:px-8 mb-10 md:mb-25 pb-10 md:pb-25">
+            <h5 class="text-black mb-6 md:mb-12 text-sm md:text-l text-center font-bold py-10 md:pt-20">OUR BLOG
+            </h5>
+            <div class="block md:grid md:grid-cols-2 lg:grid-cols-2 gap-10">
+                <div class="shadow-xl pb-10 rounded-md bg-white">
+                    <img src="assets/53.jpg" alt="" class="rounded-t-md">
+                    <div class=" px-4">
+                        <p class="pt-14  text-2xl md:text-3xl lg:text-3xl font-extralight leading-6 md:leading-8 lg:leading-9">
+                           Printed legacy 
+                        </p>
+                        <p
+                            class="  text-xl md:text-2xl lg:text-xl text-gray-700 font-light leading-9 md:leading-8 pt-4 md:pt-10">
+                            This project aimed to develop the website’s eCommerce functionality and content
+                            management, increase brand <span class="font-semibold">awarenes</span> with updated content
+                        </p>
+                        <span class="material-symbols-outlined md:mt-10 md:ms-70">
+                            arrow_forward
+                        </span>
+                    </div>
                 </div>
-                <div>
-                    <img src="assets/logo.svg" alt="" class="w-40 mx-auto">
+                <div class="shadow-xl pb-10 rounded-md bg-white">
+                    <img src="assets/Love.png" alt="" class="rounded-t-md">
+                    <div class=" px-4">
+                        <p class="pt-14 text-2xl md:text-3xl lg:text-3xl font-extralight leading-6 md:leading-8 lg:leading-9">
+                            Printed legacy
+                        </p>
+                        <p
+                            class="text-xl md:text-2xl lg:text-xl text-gray-700 font-light leading-9 md:leading-8 pt-4 md:pt-10">
+                            This project aimed to develop the website’s <span class="font-semibold">eCommerce</span> functionality and content
+                            management, increase brand awareness with updated content
+                        </p>
+                        <span class="material-symbols-outlined md:mt-10 md:ms-70 text-end">
+                            arrow_forward
+                        </span>
+                    </div>
                 </div>
-                <div>
-                    <img src="assets/logo.svg" alt="" class="w-40 mx-auto">
-                </div>
-                <div class="">
-                    <img src="assets/logo.svg" alt="" class="w-40 mx-auto">
-                </div>
-                <div>
-                    <img src="assets/logo.svg" alt="" class="w-40 mx-auto">
-                </div>
-                <div>
-                    <img src="assets/logo.svg" alt="" class="w-40 mx-auto">
-                </div>
-                <div class="">
-                    <img src="assets/logo.svg" alt="" class="w-40 mx-auto">
-                </div>
-                <div>
-                    <img src="assets/logo.svg" alt="" class="w-40 mx-auto">
-                </div>
-                <div>
-                    <img src="assets/logo.svg" alt="" class="w-40 mx-auto">
-                </div>
-                <div class="">
-                    <img src="assets/logo.svg" alt="" class="w-40 mx-auto">
-                </div>
-                <div>
-                    <img src="assets/logo.svg" alt="" class="w-40 mx-auto">
-                </div>
-                <div>
-                    <img src="assets/logo.svg" alt="" class="w-40 mx-auto">
-                </div>
-                <div class="">
-                    <img src="assets/logo.svg" alt="" class="w-40 mx-auto">
-                </div>
-                <div>
-                    <img src="assets/logo.svg" alt="" class="w-40 mx-auto">
-                </div>
-                <div>
-                    <img src="assets/logo.svg" alt="" class="w-40 mx-auto">
+                <!-- <div class="shadow-xl rounded-md">
+                    <img src="assets/53.jpg" alt="" class="rounded-t-md">
+                    <div class=" px-4">
+                        <h5 class="mt-72 md:mt-14 text-sm md:text-l font-bold">PRINTED LEGACIES</h5>
+                        <p
+                            class="text-xl md:text-2xl lg:text-xl text-gray-700 font-light leading-9 md:leading-8 pt-2 md:pt-4">
+                            This project aimed to develop the website’s eCommerce functionality and content
+                            management, increase brand awareness with updated content
+                        </p>
+                        <span class="material-symbols-outlined  md:mt-10 md:ms-70">
+                            arrow_forward
+                        </span>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- section-5 -->
+    <section class="client">
+        <div class=" container mx-auto  px-4 sm:px-6 lg:px-8 mb-10 md:mb-25 pb-10 md:pb-25 ">
+            <h5 class="text-black mb-6 md:mb-12 text-sm md:text-l text-center font-bold py-10 md:pt-20">OUR CLIENTS
+            </h5>
+            <div>
+                <div class="max-w-5xl mx-auto md:grid md:grid-cols-3 md:grid-rows-2  gap-y-10  rounded-xl">
+
+                    <div class="rounded-xl">
+                        <img src="assets/logo.svg" alt="" class="w-40 mx-auto">
+                    </div>
+                    <div class="rounded-xl">
+                        <img src="assets/logo.svg" alt="" class="w-40 mx-auto">
+                    </div>
+                    <div class="rounded-xl">
+                        <img src="assets/logo.svg" alt="" class="w-40 mx-auto">
+                    </div>
+                    <div class="rounded-xl">
+                        <img src="assets/logo.svg" alt="" class="w-40 mx-auto">
+                    </div>
+                    <div class="rounded-xl">
+                        <img src="assets/logo.svg" alt="" class="w-40 mx-auto">
+                    </div>
+                    <div class="rounded-xl">
+                        <img src="assets/logo.svg" alt="" class="w-40 mx-auto">
+                    </div>
+                    <div class="rounded-xl">
+                        <img src="assets/logo.svg" alt="" class="w-40 mx-auto">
+                    </div>
+                    <div class="rounded-xl">
+                        <img src="assets/logo.svg" alt="" class="w-40 mx-auto">
+                    </div>
+                    <div class="rounded-xl">
+                        <img src="assets/logo.svg" alt="" class="w-40 mx-auto">
+                    </div>
                 </div>
             </div>
         </div>
@@ -278,26 +348,30 @@
 
     <!-- footer -->
     <footer>
-        <div class="bg-black py-10 md:py-20 lg:flex flex-col justify-center">
-            <div class="text-white md:flex flex-col items-center justify-center gap-10">
+        <div class="bg-black py-8 md:py-20  md:flex md:flex-col justify-center ">
+            <div class="text-white md:flex flex-col items-center justify-center gap-8 md:py-6">
                 <div>
                     <img src="assets/logo design (2).svg" alt="" class="w-40">
                 </div>
-                <div class="block md:flex space-x-8 foot-2">
-                    <P class="hover:underline">LINKEDIN</P>
-                    <P class="hover:underline">BEHANCE</P>
-                    <P class="hover:underline">DRIBBLE</P>
+                <div class="block space-y-4 p-4 pb-8 md:flex space-x-8">
+                    <P class="hover:font-bold text-gray-400 tracking-wider">
+                        LINKEDIN</P>
+                    <P class="hover:font-bold text-gray-400 tracking-wider">
+                        BEHANCE</P>
+                    <P class="hover:font-bold text-gray-400 tracking-wider">
+                        DRIBBLE</P>
                     <!-- <p class="hover:underline">FACEBOOK</p> -->
-                    <P class="hover:underline">PINTREST</P>
-                    <P class="hover:underline">INSTAGRAM</P>
+                    <P class="hover:font-bold text-gray-400 tracking-wider">
+                        PINTREST</P>
+                    <P class="hover:font-bold text-gray-400 tracking-wider">
+                        INSTAGRAM</P>
                     <!-- <P class="hover:underline">SKYPE</P> -->
                 </div>
-                <hr class="my-6">
 
             </div>
-            <hr class="text-white pb-10">
+            <hr class="w-1/2 mx-auto text-gray-400 py-4 md:py-6 opacity-50">
             <div class="foot">
-                <p class="text-sm text-center text-white">© New Scarecrow Production. All Rights Reserved.
+                <p class="text-sm text-center text-gray-400">© New Scarecrow Production. All Rights Reserved.
                 </p>
             </div>
         </div>

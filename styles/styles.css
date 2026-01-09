@@ -40,9 +40,9 @@ body{
     background-size: cover;
 }
 /* section-3 */
-.sec-3{
+.sec-3, .sec-1 {
     background: fixed;
-    background-image: url("../assets/Banner\ 1.jpg");
+    background-image: url("../assets/222.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -55,24 +55,13 @@ body{
 .img-gallery:hover{
     background-color: rgb(225, 225, 225, 0.8);
 }
-
-@keyframes work {
-    0% {
-        transform: translateX(0);
-    }
-    /* 25%{
-        transform: translateX(-100%);
-    }
-
-    50% {
-        transform: translateX(-200%);
-    }
-    75% {
-        transform: translateX(-300%);
-    } */
-    100% {
-        transform: translateX(-400%);
-    }
+.blog{
+    background: fixed;
+    background-image: url("../assets/5555.jpg");
+    background-size: cover
+    ;
 }
+
+
 
 /* footer */
