@@ -40,7 +40,7 @@ body{
     background-size: cover;
 }
 /* section-3 */
-.sec-3, .sec-1 {
+.service,.team, .sec-1 {
     background: fixed;
     background-image: url("../assets/222.jpg");
     background-repeat: no-repeat;
@@ -55,11 +55,34 @@ body{
 .img-gallery:hover{
     background-color: rgb(225, 225, 225, 0.8);
 }
-.blog{
+.client{
     background: fixed;
     background-image: url("../assets/5555.jpg");
     background-size: cover
     ;
+}
+
+ /* Hide scrollbar */
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .hide-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;     /* Firefox */
+    }
+
+  /* --animate-wiggle: wiggle 1s ease-in-out infinite; */
+  @keyframes wiggle {
+    0%{
+        transform: rotate(0deg);
+    }
+    100% {
+      transform: rotatey(180deg);
+    }
+    /* 50% {
+      transform: rotate(3deg);
+    } */
+  }
 }
 
 
