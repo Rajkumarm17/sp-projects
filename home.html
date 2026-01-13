@@ -381,7 +381,7 @@
     <!-- contact us -->
     <section class="contact  py-20 md:py-35 lg:py-50">
         <div class="flex flex-col justify-center items-center">
-            <h5 class="text-black mb-6 md:mb-12text-base text-center font-bold pb-10">CONTACT US
+            <h5 class="text-black mb-6 md:mb-12text-base text-center font-bold pb-10">START CONVERSATION
             </h5>
             <div class="block md:flex items-center gap-x-10 text-xl md:text-2xl lg:text-3xl font-extralight">
                 <a href="tel:+919884072469" class="text-black  hover:font-semibold">+1 (408) 775 9573</a>
@@ -434,31 +434,28 @@
 
     // Get the button
     const scrollBtn = document.getElementById("scrollTopBtn");
+    const ScrollNav =document.getElementById("nav-tags");
 
-    // Show button when user scrolls down
+
+    // Show button when user scrolls down and navbar bg change
     window.onscroll = function () {
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
             scrollBtn.style.display = "block";
+            ScrollNav.style.backgroundColor = "white";
+
         } else {
             scrollBtn.style.display = "none";
+            ScrollNav.style.backgroundColor = "transparent";
+
         }
     };
 
-    // Scroll to top when button is clicked
+    // Scroll to top when button is clicked 
     scrollBtn.onclick = function () {
         window.scrollTo({
             top: 0,
             behavior: "smooth"   // smooth scrolling effect
         });
-    };
-
-    const ScrollNav =document.getElementById("nav-tags");
-     window.onscroll = function () {
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            ScrollNav.style.backgroundColor = "white";
-        } else {
-            ScrollNav.style.backgroundColor = "transparent";
-        }
     };
 </script>
 
