@@ -25,17 +25,18 @@
     <div class="home-hero">
         <!-- menu -->
 
-        <div id="mobile-menu" class="w-1/2 hidden bg-transparent absolute top-0 right-0 mx-auto ">
+        <div id="mobile-menu" class="w-1/2 fixed top-0 right-0  hidden bg-transparent  mx-auto ">
             <ul class="block space-y-4 mt-4 text-start p-10 bg-black">
-                <li class="hover:font-bold"><a href="#" class="text-gray-400">HOME</a></li>
-                <li class="hover:font-bold"><a href="#" class=" text-gray-400">ABOUT US</a></li>
-                <li class="hover:font-bold"><a href="#" class="text-gray-400 ">SERVICES</a></li>
-                <li class="hover:font-bold"><a href="#" class="text-gray-400">CASE STUDY</a></li>
-                <li class="hover:font-bold"><a href="#" class="text-gray-400 ">CONNECT</a></li>
-                <li class="hover:font-bold"><a href="#" class=" text-gray-400">BLOG</a></li>
+                <li class="hover:font-bold"><a href="/home.html" class="text-gray-400">HOME</a></li>
+                <li class="hover:font-bold"><a href="/about.html" class=" text-gray-400">ABOUT US</a></li>
+                <li class="hover:font-bold"><a href="/services.html" class="text-gray-400 ">SERVICES</a></li>
+                <li class="hover:font-bold"><a href="/case-study.html" class="text-gray-400">CASE STUDY</a></li>
+                <li class="hover:font-bold"><a href="/contact.html" class="text-gray-400 ">CONNECT</a></li>
+                <li class="hover:font-bold"><a href="/blog.html" class=" text-gray-400">BLOG</a></li>
             </ul>
         </div>
-        <div id="nav-tags" class="nav fixed top-0 right-0 left-0 md:py-4 flex flex-row justify-between px-12 items-center shadow-xl">
+        <div id="nav-tags"
+            class="nav fixed top-0 right-0 left-0 md:py-4 flex flex-row justify-between px-12 items-center shadow-xl">
             <div>
                 <img src="assets/logo.svg" alt="" class="w-40">
             </div>
@@ -52,13 +53,13 @@
                     </ul>
                 </div>
                 <div id="menu-btn" class="block">
-                    <span class="material-symbols-outlined text-b">
+                    <span id="btn" class="material-symbols-outlined text-b">
                         menu
                     </span>
                 </div>
             </div>
         </div>
-        <div class="h-dvh container mx-auto md:max-w-5xl mx-auto px-8 md:px-12 lg:px-16 flex  justify-start">
+        <div class="h-dvh container mx-auto md:max-w-5xl px-8 md:px-12 lg:px-16 flex  justify-start">
             <!-- <div class="md:w-1/2 pt-30 md:pt-40 pl-10 md:pl-20"> -->
             <div class="md:w-1/2 flex flex-col justify-center pt-30 gap-y-9 md:gap-y-8 lg:gap-y-15">
                 <!-- <h5 class="mb-6 md:mb-12 text-sm md:text-l font-bold text-black">WHO WE ARE</h5> -->
@@ -68,7 +69,7 @@
                     lasting
                     impressions.</p>
                 <button class="me-auto rounded-sm bg-black text-gray-400 py-1 px-4 hover:bg-gray-300 hover:text-black">
-                    <a href="#" class="text-sm md:text- ">VIEW MORE</a>
+                    <a href="#" class="text-sm md:text-base">VIEW MORE</a>
                 </button>
             </div>
             <!-- <div class="w-1/2 ">
@@ -168,8 +169,8 @@
                             <p
                                 class="px-6 text-xl md:text-2xl lg:text-xl text-gray-700 font-light leading-9 md:leading-8 pt-4 md:pt-10">
                                 UI UX Design /
-                                Web & App Design / 
-                                Logo & Brand Identity / 
+                                Web & App Design /
+                                Logo & Brand Identity /
                                 Logo & Brand Identity /
                                 Logo & Brand Identity /
                                 Business & Advertising
@@ -400,17 +401,17 @@
                     <img src="assets/logo design (2).svg" alt="" class="w-40">
                 </div>
                 <div class="block space-y-4 p-4 pb-8 md:flex space-x-8">
-                    <P class="hover:font-bold text-gray-400 tracking-wider">
-                        LINKEDIN</P>
-                    <P class="hover:font-bold text-gray-400 tracking-wider">
-                        BEHANCE</P>
-                    <P class="hover:font-bold text-gray-400 tracking-wider">
-                        DRIBBLE</P>
+                    <a href="" class="hover:font-bold text-gray-400 tracking-wider">
+                        LINKEDIN</a>
+                    <a href="" class="hover:font-bold text-gray-400 tracking-wider">
+                        BEHANCE</a>
+                    <a href="" class="hover:font-bold text-gray-400 tracking-wider">
+                        DRIBBLE</a>
                     <!-- <p class="hover:underline">FACEBOOK</p> -->
-                    <P class="hover:font-bold text-gray-400 tracking-wider">
-                        PINTREST</P>
-                    <P class="hover:font-bold text-gray-400 tracking-wider">
-                        INSTAGRAM</P>
+                    <a href="" class="hover:font-bold text-gray-400 tracking-wider">
+                        PINTREST</a>
+                    <a href="" class="hover:font-bold text-gray-400 tracking-wider">
+                        INSTAGRAM</a>
                     <!-- <P class="hover:underline">SKYPE</P> -->
                 </div>
 
@@ -425,16 +426,29 @@
 </body>
 
 <script>
+    // Get button and menu elements
     const menuBtn = document.getElementById("menu-btn");
-    const mobileMenu = document.getElementById("mobile-menu");
+    const menu = document.getElementById("mobile-menu");
+    const btn = document.getElementById('btn')
 
-    menuBtn.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
+    // Add click event
+    menuBtn.addEventListener("click", function () {
+        if (menu.classList.contains("hidden")) {
+            // If menu is hidden → show it
+            menu.classList.remove("hidden");
+            btn.style.color = "gray";
+        } else {
+            // If menu is visible → hide it
+            menu.classList.add("hidden");
+            btn.style.color = "black";
+
+        }
     });
+
 
     // Get the button
     const scrollBtn = document.getElementById("scrollTopBtn");
-    const ScrollNav =document.getElementById("nav-tags");
+    const ScrollNav = document.getElementById("nav-tags");
 
 
     // Show button when user scrolls down and navbar bg change
