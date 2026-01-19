@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Case-study</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
     <div class="home-hero">
@@ -14,7 +22,7 @@
                 <li class="hover:font-bold"><a href="/home.html" class="text-gray-400">HOME</a></li>
                 <li class="hover:font-bold"><a href="/about.html" class=" text-gray-400">ABOUT US</a></li>
                 <li class="hover:font-bold"><a href="/services.html" class="text-gray-400 ">SERVICES</a></li>
-                <li class="hover:font-bold"><a href="/case-study.html" class="text-gray-400">CASE STUDY</a></li>
+                <li class="hover:font-bold"><a href="/case.html" class="text-gray-400">CASE STUDY</a></li>
                 <li class="hover:font-bold"><a href="/contact.html" class="text-gray-400 ">CONNECT</a></li>
                 <li class="hover:font-bold"><a href="/blog.html" class=" text-gray-400">BLOG</a></li>
             </ul>
@@ -54,73 +62,5 @@
                     impressions.</p>
         </div>
     </div>
-
-    <!-- blog -->
-    <section>
-
-    </section>
-
-        <!-- footer -->
-    <footer>
-        <div class="bg-black py-8 md:py-20  md:flex md:flex-col justify-center ">
-            <div class="text-white md:flex flex-col items-center justify-center gap-8 md:py-6">
-                <div>
-                    <img src="assets/logo design (2).svg" alt="" class="w-40">
-                </div>
-                <div class="block space-y-4 p-4 pb-8 md:flex space-x-8">
-                    <a href="" class="hover:font-bold text-gray-400 tracking-wider">
-                        LINKEDIN</a>
-                    <a href="" class="hover:font-bold text-gray-400 tracking-wider">
-                        BEHANCE</a>
-                    <a href="" class="hover:font-bold text-gray-400 tracking-wider">
-                        DRIBBLE</a>
-                    <!-- <p class="hover:underline">FACEBOOK</p> -->
-                    <a href="" class="hover:font-bold text-gray-400 tracking-wider">
-                        PINTREST</a>
-                    <a href="" class="hover:font-bold text-gray-400 tracking-wider">
-                        INSTAGRAM</a>
-                    <!-- <P class="hover:underline">SKYPE</P> -->
-                </div>
-
-            </div>
-            <hr class="w-1/2 mx-auto text-gray-400 py-4 md:py-6 opacity-50">
-            <div class="foot">
-                <p class="text-sm text-center text-gray-400">© New Scarecrow Production. All Rights Reserved.
-                </p>
-            </div>
-        </div>
-    </footer>
 </body>
-
-<script>
-    // Get button and menu elements
-    const menuBtn = document.getElementById("menu-btn");
-    const menu = document.getElementById("mobile-menu");
-    const btn = document.getElementById('btn')
-
-    // Add click event
-    menuBtn.addEventListener("click", function () {
-        if (menu.classList.contains("hidden")) {
-            // If menu is hidden → show it
-            menu.classList.remove("hidden");
-            btn.style.color = "gray";
-        } else {
-            // If menu is visible → hide it
-            menu.classList.add("hidden");
-            btn.style.color = "black";
-
-        }
-    });
-
-    const ScrollNav = document.getElementById("nav-tags");
-    window.onscroll = function () {
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            ScrollNav.style.backgroundColor = "white";
-
-        } else {
-            ScrollNav.style.backgroundColor = "transparent";
-
-        }
-    };
-</script>
 </html>
