@@ -17,6 +17,11 @@
 </head>
 
 <body>
+    <button id="scrollTopBtn"
+        class="rounded fixed bottom-5 right-5 text-gray-500 hover:text-black hover:-translate-y-3 hover:transition duration-300 ease-in-out px-2 py-2  hidden">
+        <span class="material-icons">arrow_upward</span>
+    </button>
+
     <div class="home-hero">
         <!-- menu -->
         <div id="mobile-menu" class="w-1/2 fixed top-0 right-0  hidden bg-transparent  mx-auto ">
@@ -90,7 +95,7 @@
                     materials to create some of the world’s most beautiful and durable watches.</p>
             </div>
         </div>
-        <div class="pb-10 md:pb-20 lg:pb-30">
+        <div class="py-10 md:py-20 lg:py-30">
             <div class="container max-w-5xl mx-auto overflow-hidden h-100">
                 <div class="container-5xl flex">
                     <img src="assets/carousel.jpg" alt="" class="flex-shrink-0 object-fit-cover">
@@ -112,7 +117,7 @@
                     materials to create some of the world’s most beautiful and durable watches.</p>
             </div>
         </div>
-        <div class="pb-5 md:pb-10 lg:pb-15 hidden">
+        <div id="blog" class="py-10 md:py-20 lg:py-30 hidden">
             <div class="container max-w-5xl mx-auto overflow-hidden h-100">
                 <div class="container-5xl flex">
                     <img src="assets/carousel.jpg" alt="" class="flex-shrink-0 object-fit-cover">
@@ -134,9 +139,9 @@
                     materials to create some of the world’s most beautiful and durable watches.</p>
             </div>
         </div>
-        <div  class="container text-center pb-5 md:pb-10 lg:pb-15">
+        <div class="container max-w-5xl mx-auto text-end pb-5 md:pb-10 lg:pb-15">
             <button id="view-more"
-                class="rounded-sm bg-black text-gray-400 py-1 px-4 hover:bg-transparent hover:text-black">
+                class="text-gray-400 py-1 px-4 hover:text-black">
                 <span class="material-icons">arrow_downward</span>
             </button>
 
@@ -310,8 +315,7 @@
     const menuBtn = document.getElementById("menu-btn");
     const menu = document.getElementById("mobile-menu");
     const btn = document.getElementById('btn');
-    const button = document.getElementById('view-more');
-    const container = document.getElementById('grid');
+
 
     // Add click event
     menuBtn.addEventListener("click", function () {
@@ -319,6 +323,7 @@
             // If menu is hidden → show it
             menu.classList.remove("hidden");
             btn.style.color = "gray";
+
         } else {
             // If menu is visible → hide it
             menu.classList.add("hidden");
@@ -327,32 +332,45 @@
         }
     });
 
+    const content = document.getElementById('blog')
+    const button = document.getElementById('view-more')
 
-    // Add click event
     button.addEventListener("click", function () {
-        if (container.classList.contains("hidden")) {
+        if (content.classList.contains("hidden")) {
             // If menu is hidden → show it
-            container.classList.remove("hidden");
-            button.textContent = "View less"
+            content.classList.remove("hidden");
 
         } else {
             // If menu is visible → hide it
-            container.classList.add("hidden");
-            button.textContent = "View more"
-
+            content.classList.add("hidden");
 
         }
     });
 
+    // Get the button
+    const scrollBtn = document.getElementById("scrollTopBtn");
     const ScrollNav = document.getElementById("nav-tags");
+
+
+    // Show button when user scrolls down and navbar bg change
     window.onscroll = function () {
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            scrollBtn.style.display = "block";
             ScrollNav.style.backgroundColor = "white";
 
         } else {
+            scrollBtn.style.display = "none";
             ScrollNav.style.backgroundColor = "transparent";
 
         }
+    };
+
+    // Scroll to top when button is clicked 
+    scrollBtn.onclick = function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"   // smooth scrolling effect
+        });
     };
 </script>
 

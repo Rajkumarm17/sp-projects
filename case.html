@@ -12,10 +12,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="/styles/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
+    <button id="scrollTopBtn"
+        class="rounded fixed bottom-5 right-5 text-gray-500 hover:text-black hover:-translate-y-3 hover:transition duration-300 ease-in-out px-2 py-2  hidden">
+        <span class="material-icons">arrow_upward</span>
+    </button>
+
     <div class="home-hero">
         <!-- menu -->
 
@@ -64,31 +70,45 @@
         </div>
     </div>
 
-    <!-- case-study -->
-    <section>
-        <div>
-            <h5 class="text-black mb-6 md:mb-12text-base text-center font-bold pb-10">CASE STUDY
-            </h5>
-            <div class="md:grid md:grid-cols-3 ">
-                <div class="col-span-2 h-100 overflow-hidden">
-                    <img src="assets/Love.png" alt="">
-                </div>
-                <div>
-                    <img src="assets/From Stone to Divinity.jpeg" alt="">
-                </div>
-                <div>
-                    <img src="assets/Love.png" alt="" class="object-fit-cover">
-                </div>
-                <div class="col-span-2">
-                    <img src="assets/Love.png" alt="">
-                </div>
-                <div class="col-span-2">
-                    <img src="assets/Love.png" alt="">
-                </div>
-                <div>
-                    <img src="assets/Love.png" alt="" class="">
-                </div>
+
+    <section class="pt-10 md:pt-20 lg:pt-32">
+        <h5 class="text-black mb-6 md:mb-12text-base text-center font-bold pb-10">CASE STUDY
+        </h5>
+        <div
+            class=" p-6 bg-black grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[200px]">
+
+            <!-- Large Image spanning 2 cols -->
+            <div class="bg-white col-span-2 row-span-2 overflow-hidden rounded-lg shadow-lg">
+                <img src="assets/Love.png" alt="Large Image"
+                    class="w-full h-full object-cover transform hover:scale-105 transition duration-300 ease-in-out">
             </div>
+
+            <!-- Normal Images -->
+            <div class="bg-white overflow-hidden rounded-lg shadow-lg">
+                <img src="assets/Love.png" alt="Gallery Image"
+                    class="w-full h-full object-cover transform hover:scale-105 transition duration-300 ease-in-out">
+            </div>
+
+            <div class="bg-white overflow-hidden rounded-lg shadow-lg">
+                <img src="assets/Love.png" alt="Gallery Image"
+                    class="w-full h-full object-cover transform hover:scale-105 transition duration-300 ease-in-out">
+            </div>
+
+            <div class="bg-white col-span-2 row-span-2 overflow-hidden rounded-lg shadow-lg">
+                <img src="assets/Love.png" alt="Tall Image"
+                    class="w-full h-full object-cover transform hover:scale-105 transition duration-300 ease-in-out">
+            </div>
+
+            <div class="bg-white overflow-hidden rounded-lg shadow-lg">
+                <img src="assets/Love.png" alt="Gallery Image"
+                    class="w-full h-full object-cover transform hover:scale-105 transition duration-300 ease-in-out">
+            </div>
+
+            <div class="bg-white overflow-hidden rounded-lg shadow-lg">
+                <img src="assets/Love.png" alt="Gallery Image"
+                    class="w-full h-full object-cover transform hover:scale-105 transition duration-300 ease-in-out">
+            </div>
+
         </div>
     </section>
 
@@ -104,6 +124,8 @@
                 impressions.</p>
         </div>
     </section>
+
+
     <!-- footer -->
     <footer>
         <div class="bg-black py-8 md:py-20  md:flex md:flex-col justify-center ">
@@ -135,5 +157,49 @@
         </div>
     </footer>
 </body>
+<script>
+    // Get button and menu elements
+    const menuBtn = document.getElementById("menu-btn");
+    const menu = document.getElementById("mobile-menu");
+    const btn = document.getElementById('btn')
+
+    // Add click event
+    menuBtn.addEventListener("click", function () {
+        if (menu.classList.contains("hidden")) {
+            // If menu is hidden → show it
+            menu.classList.remove("hidden");
+            btn.style.color = "gray";
+        } else {
+            // If menu is visible → hide it
+            menu.classList.add("hidden");
+            btn.style.color = "black";
+
+        }
+    });
+
+
+    const scrollBtn = document.getElementById("scrollTopBtn");
+    const ScrollNav = document.getElementById("nav-tags");
+    // Show button when user scrolls down and navbar bg change
+    window.onscroll = function () {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            scrollBtn.style.display = "block";
+            ScrollNav.style.backgroundColor = "white";
+
+        } else {
+            scrollBtn.style.display = "none";
+            ScrollNav.style.backgroundColor = "transparent";
+
+        }
+    };
+
+    // Scroll to top when button is clicked 
+    scrollBtn.onclick = function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"   // smooth scrolling effect
+        });
+    };
+</script>
 
 </html>
