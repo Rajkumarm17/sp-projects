@@ -25,15 +25,21 @@
     <div class="home-hero">
         <!-- menu -->
 
-        <div id="mobile-menu" class="w-1/2 fixed top-0 right-0  hidden bg-transparent  mx-auto ">
-            <ul class="block space-y-4 mt-4 text-start p-10 bg-black">
-                <li class="hover:font-bold"><a href="#" class="text-gray-400">HOME</a></li>
-                <li class="hover:font-bold"><a href="/about.html" class=" text-gray-400">ABOUT US</a></li>
-                <li class="hover:font-bold"><a href="/services.html" class="text-gray-400 ">SERVICES</a></li>
-                <li class="hover:font-bold"><a href="/case.html" class="text-gray-400">CASE STUDY</a></li>
-                <li class="hover:font-bold"><a href="/contact.html" class="text-gray-400 ">CONNECT</a></li>
-                <li class="hover:font-bold"><a href="/blog.html" class=" text-gray-400">BLOG</a></li>
-            </ul>
+        <div id="mobile-menu" class="z-40 w-full fixed top-0 right-0  hidden bg-transparent  mx-auto ">
+           <div class="flex justify-around space-x-12 md:py-8 ">
+                    <a href="/home.html" class="text-black text-lg hover:font-bold ">HOME</a>
+                    <a href="/about.html" class=" text-black hover:font-bold">ABOUT US</a>
+                    <a href="/services.html" class="text-black hover:font-bold ">SERVICES</a>
+                    <a href="/case.html" class="text-black hover:font-bold">CASE STUDY</a>
+                    <a href="/contact.html" class="text-black hover:font-bold ">CONNECT</a>
+                    <a href="/blog.html" class=" text-black hover:font-bold">BLOG</a>
+                    <a href="/career.html" class="text-black hover:font-bold ">CAREER</a>
+                </div>
+                    <span id="btn" class="material-symbols-outlined text-b">
+                        menu
+                    </span>
+                </div>
+            </div>
         </div>
         <div id="nav-tags"
             class="nav fixed top-0 right-0 left-0 md:py-4 flex flex-row justify-between px-12 items-center shadow-xl">
@@ -126,6 +132,83 @@
                 <img src="assets/From Stone to Divinity.jpeg" alt="" class="lg:max-w-1/2">
             </div>
 
+        </div>
+    </section>
+
+    <!-- our team -->
+    <section class="team z-0 mx-auto px-4 sm:px-6 lg:px-8  py-20 md:py-35 lg:py-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h5 class="text-center mb-6 md:mb-12 text-base font-bold">AWARDS</h5>
+            <div class="container">
+                <div class="flex p-10 ">
+                    <div class="relative max-w-5xl mx-auto">
+
+                        <!-- Carousel Container -->
+                        <div id="carousel"
+                            class="md:flex overflow-x-auto scroll-smooth snap-x snap-mandatory space-x-6 px-12 hide-scrollbar">
+
+                            <!-- Card 1 -->
+                            <div
+                                class="overflow-y-hidden snap-start flex-shrink-0 w-70 h-80 bg-white rounded-md flex items-center justify-center text-xl font-bold">
+                                <img src="assets/WhatsApp Image 2026-01-12 at 1.48.35 PM.jpeg" alt=""
+                                    class="object-fit-contain">
+
+                            </div>
+                            <!-- Card 2 -->
+                            <div
+                                class="shadow-xl overflow-y-hidden snap-start flex-shrink-0 w-70 h-80 bg-white rounded-md flex items-center justify-center text-xl font-bold">
+                                <img src="assets/WhatsApp Image 2026-01-12 at 1.48.35 PM.jpeg" alt=""
+                                    class="object-fit-contain">
+
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div
+                                class="shadow-xl overflow-y-hidden snap-start flex-shrink-0 w-70 h-80 bg-white rounded-md flex items-center justify-center text-xl font-bold">
+                                <img src="assets/WhatsApp Image 2026-01-12 at 1.48.35 PM.jpeg" alt=""
+                                    class="object-fit-contain">
+
+                            </div>
+                            <!-- Card 4 -->
+                            <div
+                                class="shadow-xl overflow-y-hidden snap-start flex-shrink-0 w-70 h-80 bg-white rounded-md flex items-center justify-center text-xl font-bold">
+                                <img src="assets/WhatsApp Image 2026-01-12 at 1.48.35 PM.jpeg" alt=""
+                                    class="object-fit-contain">
+
+                            </div>
+                            <!-- Card 5 -->
+                            <div
+                                class="shadow-xl overflow-y-hidden snap-start flex-shrink-0 w-70 h-80 bg-white rounded-md flex items-center justify-center text-xl font-bold">
+                                <img src="assets/WhatsApp Image 2026-01-12 at 1.48.35 PM.jpeg" alt=""
+                                    class="object-fit-contain">
+
+                            </div>
+                            <!-- Card 6 -->
+                            <div
+                                class="shadow-xl overflow-y-hidden snap-start flex-shrink-0 w-70 h-80 bg-white rounded-md  flex items-center justify-center text-xl font-bold">
+                                <img src="assets/WhatsApp Image 2026-01-12 at 1.48.35 PM.jpeg" alt=""
+                                    class="object-fit-contain">
+
+                            </div>
+                            <!-- Add more cards as needed -->
+                        </div>
+                        <!-- Indicators -->
+                        <div class="flex justify-center mt-10 space-x-2">
+                            <button
+                                onclick="document.getElementById('carousel').scrollTo({left: 0, behavior: 'smooth'})"
+                                class="w-5 h-1.5 opacity-50 hover:opacity-100 cursor-pointer bg-gray-400 hover:bg-gray-600"></button>
+                            <button
+                                onclick="document.getElementById('carousel').scrollTo({left: 800, behavior: 'smooth'})"
+                                class="w-5 h-1.5 opacity-30 hover:opacity-100 cursor-pointer bg-gray-400 hover:bg-gray-600"></button>
+                            <button
+                                onclick="document.getElementById('carousel').scrollTo({left: 1600, behavior: 'smooth'})"
+                                class="w-5 h-1.5 opacity-20 hover:opacity-100 cursor-pointer bg-gray-400 hover:bg-gray-600"></button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
         </div>
     </section>
 
