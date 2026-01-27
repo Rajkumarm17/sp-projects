@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <!-- <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" /> -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <link
@@ -37,8 +37,8 @@
                     <a href="/career.html" class="text-black hover:font-bold ">CAREER</a>
                 </div>
                 <div id="menu-bttn" class="">
-                    <span id="btn" class="material-symbols-outlined text-b">
-                        menu
+                    <span id="btn-9" class="material-icons text-b">
+                        close
                     </span>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                     </ul>
                 </div>
                 <div id="menu-btn" class="block">
-                    <span id="btn" class="material-symbols-outlined text-b">
+                    <span id="btn-10" class="material-icons text-b">
                         menu
                     </span>
                 </div>
@@ -89,11 +89,12 @@
                     class=" text-xl md:text-2xl lg:text-3xl font-extralight text-black leading-9 md:leading-9 lg:leading-10">
                     T2, 3rd Floor, Anna Valagham, Arcot Road, Trustpuram, Kodambakkam, Chennai,
                     Tamil Nadu 600024</p>
-                    <p class="mt-6 text-xl md:text-2xl lg:text-xl text-gray-700 font-light leading-9 md:leading-8">Near Poorvika Appliances.</p>
+                <p class="mt-6 text-xl md:text-2xl lg:text-xl text-gray-700 font-light leading-9 md:leading-8">Near
+                    Poorvika Appliances.</p>
             </div>
             <div class="bg-white w-1/2">
                 <form class="bg-white  rounded p-30">
-                    <h2 class="text-base font-bold mb-10">CONTACT US</h2>
+                    <h2 class="text-base font-bold mb-10">GET IN TOUCH</h2>
 
                     <!-- Name Input -->
                     <div class="mb-6">
@@ -190,20 +191,15 @@
     // Get button and menu elements
     const menuBtn = document.getElementById("menu-btn");
     const menu = document.getElementById("mobile-menu");
-    const btn = document.getElementById('btn');
+    const btn = document.getElementById('btn-10');
+    const bttn = document.getElementById('btn-9');
 
-    // Add click event
-    menuBtn.addEventListener("click", function () {
-        if (menu.classList.contains("hidden")) {
-            // If menu is hidden → show it
-            menu.classList.remove("hidden");
-            btn.style.color = "gray";
-        } else {
-            // If menu is visible → hide it
-            menu.classList.add("hidden");
-            btn.style.color = "black";
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
 
-        }
+    bttn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
     });
 
 
