@@ -14,263 +14,267 @@
 </head>
 
 <body>
-    <div id="mobile-menu" class="w-1/2 fixed top-0 right-0  hidden bg-transparent  mx-auto ">
-        <ul class="block space-y-4 mt-4 text-start p-10 bg-black">
-            <li class="hover:font-bold"><a href="/home.html" class="text-gray-400">HOME</a></li>
-            <li class="hover:font-bold"><a href="/about.html" class=" text-gray-400">ABOUT US</a></li>
-            <li class="hover:font-bold"><a href="/services.html" class="text-gray-400 ">SERVICES</a></li>
-            <li class="hover:font-bold"><a href="/case-study.html" class="text-gray-400">CASE STUDY</a></li>
-            <li class="hover:font-bold"><a href="/contact.html" class="text-gray-400 ">CONNECT</a></li>
-            <li class="hover:font-bold"><a href="/blog.html" class=" text-gray-400">BLOG</a></li>
-        </ul>
-    </div>
-    <div id="nav-tags"
-        class="nav fixed top-0 right-0 left-0 md:py-4 flex flex-row justify-between px-12 items-center shadow-xl">
-        <div>
-            <img src="assets/logo.svg" alt="" class="w-40">
-        </div>
-        <div class="md:flex space-x-10">
-            <div class="hidden lg:block">
-                <ul class="flex space-x-6">
-                    <li class="md:text-md text-black hover:font-semibold"><a href="tel:+919884072469">+1 (408)
-                            775
-                            9573</a></li>
-                    <li class="md:text-md text-black hover:font-semibold"><a href="tel:+919884072469">+91
-                            9884072469</a></li>
-                    <li class="md:text-[17px] text-black hover:font-semibold"><a
-                            href="mailto:info@scarecrowproduction.com">info@scarecrowproduction.com</a></li>
-                </ul>
-            </div>
-            <div id="menu-btn" class="block">
-                <span id="btn" class="material-symbols-outlined text-b">
-                    menu
-                </span>
-            </div>
-        </div>
-    </div>
-    <div class="hero grid md:grid-cols-2">
+    <button id="scrollTopBtn"
+        class="rounded fixed bottom-5 right-5 text-gray-500 hover:text-black hover:-translate-y-3 hover:transition duration-300 ease-in-out px-2 py-2  hidden">
+        <span class="material-icons">arrow_upward</span>
+    </button>
 
-        <div class="bg-white hero-content container mx-auto px-4 sm:px-6 lg:px-20 py-16 mt-30">
-            <div class="text-black">
-                <h5 class="mb-2 md:mb-0 text-sm md:text-l font-bold">CLIENT</h5>
-                <p class="mb-10 md:mb-18 text-xl md:text-xl font-extrabold leading-12">RADO</p>
-            </div>
-            <div class="text-black">
-                <h5 class="mb-2 md:mb-0 text-sm md:text-l font-bold">PROJECT</h5>
-                <p class="mb-10 md:mb-18 text-2xl md:text-3xl font-extralight leading-12">Upgraded Experience Through
-                    UI/UX and
-                    Content Strategy</p>
-            </div>
-            <div class="text-black">
-                <h5 class="mb-2 md:mb-3 text-sm md:text-l font-bold">INDUSTRY</h5>
-                <ul class="mb-10 md:mb-18 text-2xl  md:text-3xl font-extralight">
-                    <li class="mb-3 md:mb-6">B2C</li>
-                    <li class="mb-3 md:mb-6">Fashion</li>
-                </ul>
-            </div>
+    <div class="home-hero">
+        <!-- menu -->
 
-            <div class="text-black">
-                <h5 class="mb-2 md:mb-3 text-sm md:text-l font-bold">SERVICES</h5>
-                <ul class="mb-10 md:mb-18 text-2xl md:text-3xl font-extralight">
-                    <li class="mb-3 md:mb-6">Content and Creative</li>
-                    <li class="mb-3 md:mb-6">Customer Experience (Cx)</li>
-                    <li class="mb-3 md:mb-6">Innovation</li>
-                </ul>
-            </div>
-            <div class="text-black">
-                <img src="assets/rado_logo.svg" alt="">
-                </p>
-            </div>
-        </div>
-        <div class="hero-image">
-            <div class="container mx-auto mt-30 w-1/2 h-60">
-                <!-- <video src="assets/WhatsApp Video 2026-01-08 at 6.07.43 PM.mp4"></video> -->
-                <img src="assets/rado_mobile_hero-1.jpeg" alt="">
-            </div>
-        </div>
-    </div>
-    <!-- section-1 -->
-    <section class="sec-1">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-14 max-w-6xl">
-            <h5 class="mb-6 md:mb-10 text-sm md:text-l font-bold">BACKGROUND</h5>
-            <p class="content text-2xl md:text-4xl lg:text-4xl font-extralight leading-9 md:leading-14 lg:leading-12">
-                Rado is a
-                world leader in the design
-                and manufacturing of luxury timepieces. Known for their use of
-                cutting-edge technology, innovation and use of fine materials, they were the first watchmaker to create
-                the ‘scratch proof’ watch and one of the first to develop a deep-sea diving watch. Rado has roughly 470
-                employees and produces about half a million watches a year that are sold in more than 150 countries
-                across 5900 different points of sale.</p>
-        </div>
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 pb-16 max-w-6xl">
-            <div class="block md:flex md:gap-8 lg:gap-16">
-                <div class="mb-10 md:mb-0 ">
-                    <h5 class="mb-6 md:mb-12 text-sm md:text-l font-bold">BRIEF</h5>
-                    <p class="text-xl md:text-2xl lg:text-xl text-gray-700 font-light leading-9 md:leading-8">Rado is a
-                        globally recognized brand, famous for its innovative designs and use of revolutionary
-                        materials to create some of the world’s most beautiful and durable watches. BORN was tasked to
-                        redevelop the Rado website, improving the UI/UX design and content strategy for an
-                        enhanced mobile user experience.</p>
+        <div id="mobile-menu" class="z-40 w-full fixed top-0 right-0  hidden bg-transparent  mx-auto ">
+            <div class="bg-white px-6 md:px-10 lg:px-14 flex items-center justify-end gap-x-10 ">
+                <div class="flex items-center justify-around space-x-12 md:py-9">
+                    <a href="/home.html" class="text-black  hover:font-bold ">HOME</a>
+                    <a href="/about.html" class=" text-black hover:font-bold">ABOUT US</a>
+                    <a href="/services.html" class="text-black hover:font-bold ">SERVICES</a>
+                    <a href="/case.html" class="text-black hover:font-bold">CASE STUDY</a>
+                    <a href="/contact.html" class="text-black hover:font-bold ">CONNECT</a>
+                    <a href="/blog.html" class=" text-black hover:font-bold">BLOG</a>
+                    <a href="/career.html" class="text-black hover:font-bold ">CAREER</a>
                 </div>
-                <div class="hlo">
-                    <h5 class="mb-6 md:mb-12 text-sm md:text-l font-bold">GOALS</h5>
-                    <p class="text-xl md:text-2xl lg:text-xl text-gray-700 font-light leading-9 md:leading-8">This
-                        project aimed to develop the website’s eCommerce functionality and content management, increase
-                        brand awareness with updated content and SEO, and migrate the site with customized Drupal
-                        functionalities to the Magento2 platform.</p>
+                <div id="menu-bttn" class="">
+                    <span id="btn-7" class="material-icons text-b">
+                        close
+                    </span>
                 </div>
             </div>
         </div>
-    </section>
+        <div class="hero grid md:grid-cols-2">
 
-    <!-- section-2 -->
-    <section>
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden relative w-full max-w-6xl">
-            <!-- Carousel track -->
-            <div class="flex animate-scroll">
-                <img src="assets/rado_desktop_3.jpeg" class="w-full object-cover flex-shrink-0" />
-                <img src="assets/rado_desktop_4.jpeg" class="w-full object-cover flex-shrink-0" />
-                <img src="assets/rado_desktop_5.jpeg" class="w-full object-cover flex-shrink-0" />
-            </div>
-        </div>
+            <div class="bg-white hero-content container mx-auto px-4 sm:px-6 lg:px-20 py-16 mt-30">
+                <div class="text-black">
+                    <h5 class="mb-2 md:mb-0 text-sm md:text-l font-bold">CLIENT</h5>
+                    <p class="mb-10 md:mb-18 text-xl md:text-xl font-extrabold leading-12">RADO</p>
+                </div>
+                <div class="text-black">
+                    <h5 class="mb-2 md:mb-0 text-sm md:text-l font-bold">PROJECT</h5>
+                    <p class="mb-10 md:mb-18 text-2xl md:text-3xl font-extralight leading-12">Upgraded Experience
+                        Through
+                        UI/UX and
+                        Content Strategy</p>
+                </div>
+                <div class="text-black">
+                    <h5 class="mb-2 md:mb-3 text-sm md:text-l font-bold">INDUSTRY</h5>
+                    <ul class="mb-10 md:mb-18 text-2xl  md:text-3xl font-extralight">
+                        <li class="mb-3 md:mb-6">B2C</li>
+                        <li class="mb-3 md:mb-6">Fashion</li>
+                    </ul>
+                </div>
 
-    </section>
-
-    <!-- section-3 -->
-    <section class="sec-3">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-50 text-center lg:max-w-4/5 ">
-            <h5 class="mb-6 md:mb-12 text-sm md:text-l font-bold">CHALLENGE</h5>
-            <p class="text-xl md:text-3xl lg:text-3xl font-extralight leading-9 md:leading-9 lg:leading-9">This
-                project aimed to develop the website’s eCommerce functionality and content management, increase
-                brand awareness with updated content and SEO, and migrate the site with customized Drupal
-                functionalities to the Magento2 platform.</p>
-        </div>
-    </section>
-    <!-- section-4 -->
-    <section class="bg-white">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-40 text-white max-w-6xl">
-            <div class="lg:flex items-center gap-20">
-                <div class="mb-10 md:mb-15 lg:max-w-1/2">
-                    <h5 class="mb-6 md:mb-12 text-sm md:text-l font-bold">OUR APPROACH</h5>
-                    <p
-                        class="mb-6 md:mb-12 text-xl md:text-3xl lg:text-4xl font-thin leading-9 md:leading-9 lg:leading-11">
-                        Improved Mobile-Friendly Design
+                <div class="text-black">
+                    <h5 class="mb-2 md:mb-3 text-sm md:text-l font-bold">SERVICES</h5>
+                    <ul class="mb-10 md:mb-18 text-2xl md:text-3xl font-extralight">
+                        <li class="mb-3 md:mb-6">Content and Creative</li>
+                        <li class="mb-3 md:mb-6">Customer Experience (Cx)</li>
+                        <li class="mb-3 md:mb-6">Innovation</li>
+                    </ul>
+                </div>
+                <div class="text-black">
+                    <img src="assets/rado_logo.svg" alt="">
                     </p>
-                    <p class="text-xl md:text-2xl lg:text-xl text-gray-400 font-light leading-9 md:leading-8">BORN
-                        enhanced Rado’s website by overhauling UI/UX and brand content. The team recreated product pages
-                        to better showcase and describe the complete product line, including an improved gift page for
-                        an upgraded purchasing experience. As a final step, the website was successfully migrated to
-                        Magento2.</p>
                 </div>
-                <div class="md:flex gap-15">
-                    <div class="mb-12 md:mb-0">
-                        <img src="assets/rado_mobile_1.jpeg" alt="">
+            </div>
+            <div class="hero-image">
+                <div class="container mx-auto mt-30 w-1/2 h-60">
+                    <!-- <video src="assets/WhatsApp Video 2026-01-08 at 6.07.43 PM.mp4"></video> -->
+                    <img src="assets/rado_mobile_hero-1.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- section-1 -->
+        <section class="sec-1">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-14 max-w-6xl">
+                <h5 class="mb-6 md:mb-10 text-sm md:text-l font-bold">BACKGROUND</h5>
+                <p
+                    class="content text-2xl md:text-4xl lg:text-4xl font-extralight leading-9 md:leading-14 lg:leading-12">
+                    Rado is a
+                    world leader in the design
+                    and manufacturing of luxury timepieces. Known for their use of
+                    cutting-edge technology, innovation and use of fine materials, they were the first watchmaker to
+                    create
+                    the ‘scratch proof’ watch and one of the first to develop a deep-sea diving watch. Rado has roughly
+                    470
+                    employees and produces about half a million watches a year that are sold in more than 150 countries
+                    across 5900 different points of sale.</p>
+            </div>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 pb-16 max-w-6xl">
+                <div class="block md:flex md:gap-8 lg:gap-16">
+                    <div class="mb-10 md:mb-0 ">
+                        <h5 class="mb-6 md:mb-12 text-sm md:text-l font-bold">BRIEF</h5>
+                        <p class="text-xl md:text-2xl lg:text-xl text-gray-700 font-light leading-9 md:leading-8">Rado
+                            is a
+                            globally recognized brand, famous for its innovative designs and use of revolutionary
+                            materials to create some of the world’s most beautiful and durable watches. BORN was tasked
+                            to
+                            redevelop the Rado website, improving the UI/UX design and content strategy for an
+                            enhanced mobile user experience.</p>
                     </div>
+                    <div class="hlo">
+                        <h5 class="mb-6 md:mb-12 text-sm md:text-l font-bold">GOALS</h5>
+                        <p class="text-xl md:text-2xl lg:text-xl text-gray-700 font-light leading-9 md:leading-8">This
+                            project aimed to develop the website’s eCommerce functionality and content management,
+                            increase
+                            brand awareness with updated content and SEO, and migrate the site with customized Drupal
+                            functionalities to the Magento2 platform.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section-2 -->
+        <section>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden relative w-full max-w-6xl">
+                <!-- Carousel track -->
+                <div class="flex animate-scroll">
+                    <img src="assets/rado_desktop_3.jpeg" class="w-full object-cover flex-shrink-0" />
+                    <img src="assets/rado_desktop_4.jpeg" class="w-full object-cover flex-shrink-0" />
+                    <img src="assets/rado_desktop_5.jpeg" class="w-full object-cover flex-shrink-0" />
+                </div>
+            </div>
+
+        </section>
+
+        <!-- section-3 -->
+        <section class="sec-3">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-50 text-center lg:max-w-4/5 ">
+                <h5 class="mb-6 md:mb-12 text-sm md:text-l font-bold">CHALLENGE</h5>
+                <p class="text-xl md:text-3xl lg:text-3xl font-extralight leading-9 md:leading-9 lg:leading-9">This
+                    project aimed to develop the website’s eCommerce functionality and content management, increase
+                    brand awareness with updated content and SEO, and migrate the site with customized Drupal
+                    functionalities to the Magento2 platform.</p>
+            </div>
+        </section>
+        <!-- section-4 -->
+        <section class="bg-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-40 text-white max-w-6xl">
+                <div class="lg:flex items-center gap-20">
+                    <div class="mb-10 md:mb-15 lg:max-w-1/2">
+                        <h5 class="mb-6 md:mb-12 text-sm md:text-l font-bold">OUR APPROACH</h5>
+                        <p
+                            class="mb-6 md:mb-12 text-xl md:text-3xl lg:text-4xl font-thin leading-9 md:leading-9 lg:leading-11">
+                            Improved Mobile-Friendly Design
+                        </p>
+                        <p class="text-xl md:text-2xl lg:text-xl text-gray-400 font-light leading-9 md:leading-8">BORN
+                            enhanced Rado’s website by overhauling UI/UX and brand content. The team recreated product
+                            pages
+                            to better showcase and describe the complete product line, including an improved gift page
+                            for
+                            an upgraded purchasing experience. As a final step, the website was successfully migrated to
+                            Magento2.</p>
+                    </div>
+                    <div class="md:flex gap-15">
+                        <div class="mb-12 md:mb-0">
+                            <img src="assets/rado_mobile_1.jpeg" alt="">
+                        </div>
+                        <div>
+                            <img src="assets/rado_mobile_2.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section-5 -->
+        <section class="bg-black py-20 pb-3 md:py-50 md:pb-5">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-15 text-center lg:max-w-4/5 ">
+                <h5 class="mb-6 md:mb-12 text-sm md:text-l text-white font-bold">UPDATED BRAND CONTENT</h5>
+                <p
+                    class="text-gray-400 text-xl md:text-3xl lg:text-3xl font-extralight leading-9 md:leading-9 lg:leading-9">
+                    BORN
+                    reimagined
+                    how Rado’s products were displayed throughout the website to highlight their first-class style and
+                    design while optimizing the brand story through SEO and content strategy.</p>
+            </div>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-20 py-16">
+                <img src="assets/rado_mobile_3.jpeg" alt="">
+            </div>
+        </section>
+
+        <!-- section-6 -->
+        <section>
+            <video autoplay loop muted poster="preview.jpg">
+                <source src="assets/rado_video.mov" type="video/mp4">
+            </video>
+        </section>
+
+        <!-- section-7 -->
+        <section>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl py-10 md:py-20 lg:py-40">
+                <h5 class="mb-2 md:mb-10 text-sm md:text-l font-bold">MOBILE-FRIENDLY INTERFACE</h5>
+                <p class="md:max-w-3/4 lg:max-w-1/2 mb-10 md:mb-18 text-2xl md:text-3xl font-extralight leading-9">BORN
+                    redesigned the
+                    mobile
+                    interface to improve the user experience by optimizing the website’s content and navigation to be
+                    more
+                    appealing for viewing on personal devices to help drive mobile conversions.</p>
+            </div>
+        </section>
+
+        <!-- section-8 -->
+        <section>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl py-10 md:pb-40 text-center">
+                <h5 class="mb-2 md:mb-10 text-sm md:text-l font-bold">OUTCOME</h5>
+                <p class="mb-10 md:mb-18 text-2xl md:text-3xl font-extralight leading-10">BORN created a redesigned
+                    website for Rado that tells the brand story using conversational, inspirational and engaging
+                    content,
+                    leading to improved customer engagement. The website offers customers a better purchasing
+                    experience,
+                    including an updated gift page featuring visual sizing. These upgrades allow further upselling,
+                    including improved personalization, engraving and specialized ordering.</p>
+            </div>
+        </section>
+        <!-- section-9 -->
+        <section>
+            <div>
+                <img src="assets/rado_desktop_6-1.jpeg" alt="">
+
+            </div>
+        </section>
+
+        <!-- section-10 -->
+        <section>
+            <div class="md:flex ">
+                <div class=" h-screen overflow-hidden">
+                    <img src="assets/rado_image_1.jpeg" alt="" class="object-fit-cover">
+                </div>
+                <div class="bg-black container md:h-3/5  lg:h-screen overflow-hidden p-40">
+                    <img src="assets/rado_mobile_11.jpeg" alt="" class="object-fit-contain max-h-92">
+                </div>
+            </div>
+        </section>
+
+        <!-- section-11 -->
+
+        <!-- footer -->
+        <footer>
+            <div class="bg-black py-8 md:py-20  md:flex md:flex-col justify-center ">
+                <div class="text-white md:flex flex-col items-center justify-center gap-8 md:py-6">
                     <div>
-                        <img src="assets/rado_mobile_2.jpeg" alt="">
+                        <img src="assets/logo design (2).svg" alt="" class="w-40">
                     </div>
+                    <div class="block space-y-4 p-4 pb-8 md:flex space-x-8">
+                        <a href="" class="hover:font-bold text-gray-400 tracking-wider">
+                            LINKEDIN</a>
+                        <a href="" class="hover:font-bold text-gray-400 tracking-wider">
+                            BEHANCE</a>
+                        <a href="" class="hover:font-bold text-gray-400 tracking-wider">
+                            DRIBBLE</a>
+                        <!-- <p class="hover:underline">FACEBOOK</p> -->
+                        <a href="" class="hover:font-bold text-gray-400 tracking-wider">
+                            PINTREST</a>
+                        <a href="" class="hover:font-bold text-gray-400 tracking-wider">
+                            INSTAGRAM</a>
+                        <!-- <P class="hover:underline">SKYPE</P> -->
+                    </div>
+
+                </div>
+                <hr class="w-1/2 mx-auto text-gray-400 py-4 md:py-6 opacity-50">
+                <div class="foot">
+                    <p class="text-sm text-center text-gray-400">© New Scarecrow Production. All Rights Reserved.
+                    </p>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- section-5 -->
-    <section class="bg-black py-20 pb-3 md:py-50 md:pb-5">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-15 text-center lg:max-w-4/5 ">
-            <h5 class="mb-6 md:mb-12 text-sm md:text-l text-white font-bold">UPDATED BRAND CONTENT</h5>
-            <p
-                class="text-gray-400 text-xl md:text-3xl lg:text-3xl font-extralight leading-9 md:leading-9 lg:leading-9">
-                BORN
-                reimagined
-                how Rado’s products were displayed throughout the website to highlight their first-class style and
-                design while optimizing the brand story through SEO and content strategy.</p>
-        </div>
-        <div class="container mx-auto px-4 sm:px-6 lg:px-20 py-16">
-            <img src="assets/rado_mobile_3.jpeg" alt="">
-        </div>
-    </section>
-
-    <!-- section-6 -->
-    <section>
-        <video autoplay loop muted poster="preview.jpg">
-            <source src="assets/rado_video.mov" type="video/mp4">
-        </video>
-    </section>
-
-    <!-- section-7 -->
-    <section>
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl py-10 md:py-20 lg:py-40">
-            <h5 class="mb-2 md:mb-10 text-sm md:text-l font-bold">MOBILE-FRIENDLY INTERFACE</h5>
-            <p class="md:max-w-3/4 lg:max-w-1/2 mb-10 md:mb-18 text-2xl md:text-3xl font-extralight leading-9">BORN
-                redesigned the
-                mobile
-                interface to improve the user experience by optimizing the website’s content and navigation to be more
-                appealing for viewing on personal devices to help drive mobile conversions.</p>
-        </div>
-    </section>
-
-    <!-- section-8 -->
-    <section>
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl py-10 md:pb-40 text-center">
-            <h5 class="mb-2 md:mb-10 text-sm md:text-l font-bold">OUTCOME</h5>
-            <p class="mb-10 md:mb-18 text-2xl md:text-3xl font-extralight leading-10">BORN created a redesigned
-                website for Rado that tells the brand story using conversational, inspirational and engaging content,
-                leading to improved customer engagement. The website offers customers a better purchasing experience,
-                including an updated gift page featuring visual sizing. These upgrades allow further upselling,
-                including improved personalization, engraving and specialized ordering.</p>
-        </div>
-    </section>
-    <!-- section-9 -->
-    <section>
-        <div>
-            <img src="assets/rado_desktop_6-1.jpeg" alt="">
-
-        </div>
-    </section>
-
-    <!-- section-10 -->
-    <section>
-        <div class="md:flex ">
-            <div class=" h-screen overflow-hidden">
-                <img src="assets/rado_image_1.jpeg" alt="" class="object-fit-cover">
-            </div>
-            <div class="bg-black container md:h-3/5  lg:h-screen overflow-hidden p-40">
-                <img src="assets/rado_mobile_11.jpeg" alt="" class="object-fit-contain max-h-92">
-            </div>
-        </div>
-    </section>
-
-    <!-- section-11 -->
-
-    <!-- footer -->
-    <footer>
-        <div class="bg-black py-8 md:py-20  md:flex md:flex-col justify-center ">
-            <div class="text-white md:flex flex-col items-center justify-center gap-8 md:py-6">
-                <div>
-                    <img src="assets/logo design (2).svg" alt="" class="w-40">
-                </div>
-                <div class="block space-y-4 p-4 pb-8 md:flex space-x-8">
-                    <a href="" class="hover:font-bold text-gray-400 tracking-wider">
-                        LINKEDIN</a>
-                    <a href="" class="hover:font-bold text-gray-400 tracking-wider">
-                        BEHANCE</a>
-                    <a href="" class="hover:font-bold text-gray-400 tracking-wider">
-                        DRIBBLE</a>
-                    <!-- <p class="hover:underline">FACEBOOK</p> -->
-                    <a href="" class="hover:font-bold text-gray-400 tracking-wider">
-                        PINTREST</a>
-                    <a href="" class="hover:font-bold text-gray-400 tracking-wider">
-                        INSTAGRAM</a>
-                    <!-- <P class="hover:underline">SKYPE</P> -->
-                </div>
-
-            </div>
-            <hr class="w-1/2 mx-auto text-gray-400 py-4 md:py-6 opacity-50">
-            <div class="foot">
-                <p class="text-sm text-center text-gray-400">© New Scarecrow Production. All Rights Reserved.
-                </p>
-            </div>
-        </div>
-    </footer>
+        </footer>
 </body>
 
 <script>
