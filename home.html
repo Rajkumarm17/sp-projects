@@ -7,8 +7,7 @@
     <title>Home</title>
     <!-- <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" /> -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
@@ -24,7 +23,7 @@
 
     <div class="home-hero">
         <!-- menu -->
-        <div id="mobile-menu" class="z-40 w-full fixed top-0 right-0  hidden bg-transparent  mx-auto ">
+        <!-- <div id="mobile-menu" class="z-40 w-full fixed top-0 right-0  hidden bg-transparent  mx-auto ">
             <div class="bg-white px-6 md:px-10 lg:px-14 block md:flex items-center justify-end gap-x-10 ">
                 <div class="block md:flex items-center justify-around space-x-12 md:py-9 ">
                     <a href="/home.html" class="text-black  hover:font-bold ">HOME</a>
@@ -33,7 +32,6 @@
                     <a href="/case.html" class="text-black hover:font-bold">CASE STUDY</a>
                     <a href="/contact.html" class="text-black hover:font-bold ">CONNECT</a>
                     <a href="/blog.html" class=" text-black hover:font-bold">BLOG</a>
-                    <!-- <a href="/career.html" class="text-black hover:font-bold ">CAREER</a> -->
                 </div>
                 <div id="menu-bttn" class="">
                     <span id="btn-1" class="material-icons text-b">
@@ -68,12 +66,43 @@
                     </span>
                 </div>
             </div>
+        </div> -->
+
+
+
+        <div id="nav-tags"
+            class="nav z-10 bg-white fixed top-0 right-0 left-0 md:py-4 flex flex-row justify-between px-12 items-center shadow-xl">
+            <div>
+                <a href="/home.html">
+                    <img src="assets/logo.svg" alt="" class="w-50 hover:scale-110">
+                </a>
+            </div>
+            <div id="mobile-menu" class="z-40 w-full  bg-transparent  mx-auto ">
+                    <div class="flex items-center justify-center space-x-10 ">
+                        <a href="/home.html" class="text-black  hover:font-bold hover:scale-110">HOME</a>
+                        <a href="/about.html" class=" text-black hover:font-bold hover:scale-110">ABOUT US</a>
+                        <a href="/services.html" class="text-black hover:font-bold hover:scale-110">SERVICES</a>
+                        <a href="/case.html" class="text-black hover:font-bold hover:scale-110">CASE STUDY</a>
+                        <a href="/contact.html" class="text-black hover:font-bold hover:scale-110">CONNECT</a>
+                        <a href="/blog.html" class=" text-black hover:font-bold hover:scale-110">BLOG</a>
+                    </div>
+            </div>
+            <div class="md:flex space-x-8">
+                <span id="btn-2" class="material-icons-outlined cursor-pointer hover:scale-110">
+
+                    phone_in_talk
+                </span>
+                <span id="btn-2" class="material-icons-outlined cursor-pointer hover:scale-110 ">
+                    mail
+                </span>
+            </div>
         </div>
 
+
+
+
         <div class="h-dvh container mx-auto md:max-w-6xl px-8 md:px-12 lg:px-16 flex  justify-start">
-            <!-- <div class="md:w-1/2 pt-30 md:pt-40 pl-10 md:pl-20"> -->
             <div class="w-full md:w-1/2 flex flex-col justify-center pt-30 gap-y-9 md:gap-y-8 lg:gap-y-15">
-                <!-- <h5 class="mb-6 md:mb-12 text-sm md:text-l font-bold text-black">WHO WE ARE</h5> -->
                 <p
                     class=" text-xl md:text-3xl lg:text-3xl font-extralight text-black leading-9 md:leading-9 lg:leading-10">
                     Where innovative <span class="font-bold">ideas</span> meet <br> <span
@@ -85,9 +114,6 @@
                     <a href="#" class="text-sm md:text-base">VIEW MORE</a>
                 </button>
             </div>
-            <!-- <div class="w-1/2 ">
-                <img src="assets/post.png" alt="" class="object-fit-cover w-[500px] h-[500px]">
-            </div> -->
         </div>
     </div>
 
@@ -468,10 +494,11 @@
         if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
             scrollBtn.style.display = "block";
             ScrollNav.style.backgroundColor = "white";
-
+            menu.style.backgroundColor = "white";
         } else {
             scrollBtn.style.display = "none";
             ScrollNav.style.backgroundColor = "transparent";
+            menu.style.backgroundColor = "transparent";
 
         }
     };
