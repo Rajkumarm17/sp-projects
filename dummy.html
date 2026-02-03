@@ -4,58 +4,528 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+    <!-- <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" /> -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
-    <link rel="stylesheet" href="/styles/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="/styles/dummy.css">
 </head>
 
 <body>
+    <button id="scrollTopBtn"
+        class="rounded fixed bottom-5 right-5 text-gray-500 hover:text-black hover:-translate-y-3 hover:transition duration-300 ease-in-out px-2 py-2  hidden">
+        <span class="material-icons">arrow_upward</span>
+    </button>
 
-</body>
-<nav class="navbar  navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Services</a>
-                </li>
-                 <li class="nav-item">
-                    <a class="nav-link" href="#">Case studies</a>
-                </li>
-                 <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                </li>
-                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+    <div class="home-hero">
+        <!-- menu -->
+        <div id="mobile-menu" class="z-40 w-full fixed top-0 right-0  hidden bg-transparent  mx-auto ">
+            <div class="bg-white px-6 md:px-10 lg:px-14 block md:flex items-center justify-end gap-x-10 ">
+                <div class="block md:flex items-center justify-around space-x-12 md:py-9 ">
+                    <a href="/home.html" class="text-black  hover:font-bold ">HOME</a>
+                    <a href="/about.html" class=" text-black hover:font-bold">ABOUT US</a>
+                    <a href="/services.html" class="text-black hover:font-bold ">SERVICES</a>
+                    <a href="/case.html" class="text-black hover:font-bold">CASE STUDY</a>
+                    <a href="/contact.html" class="text-black hover:font-bold ">CONNECT</a>
+                    <a href="/blog.html" class=" text-black hover:font-bold">BLOG</a>
+                </div>
+                <div id="menu-bttn" class="">
+                    <span id="btn-1" class="material-icons text-b">
+                        close
+                    </span>
+
+                </div>
+            </div>
+        </div>
+        <div id="nav-tags"
+            class="nav z-10 fixed top-0 right-0 left-0 md:py-4 flex flex-row justify-between px-12 items-center shadow-xl">
+            <div>
+                <a href="/home.html">
+                    <img src="assets/logo.svg" alt="" class="w-40">
+                </a>
+            </div>
+            <div class="md:flex space-x-10">
+                <div class="hidden lg:block">
+                    <ul class="flex space-x-6">
+                        <li class="md:text-md text-black hover:font-semibold"><a href="tel:+919884072469">+1 (408)
+                                775
+                                9573</a></li>
+                        <li class="md:text-md text-black hover:font-semibold"><a href="tel:+919884072469">+91
+                                9884072469</a></li>
+                        <li class="md:text-[17px] text-black hover:font-semibold"><a
+                                href="mailto:info@scarecrowproduction.com">info@scarecrowproduction.com</a></li>
+                    </ul>
+                </div>
+                <div id="menu-btn" class="block">
+                    <span id="btn-2" class="material-icons text-b">
+                        menu
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- <div id="nav-tags"
+            class="nav z-10 bg-white fixed top-0 right-0 left-0 md:py-4 flex flex-row justify-between px-12 items-center shadow-xl">
+            <div>
+                <a href="/home.html">
+                    <img src="assets/logo.svg" alt="" class="w-50 hover:scale-110">
+                </a>
+            </div>
+            <div id="mobile-menu" class="z-40 w-full  bg-transparent  mx-auto ">
+                <div class="flex items-center justify-center space-x-10 ">
+                    <a href="/home.html" class="text-black  hover:font-bold hover:scale-110">HOME</a>
+                    <a href="/about.html" class=" text-black hover:font-bold hover:scale-110">ABOUT US</a>
+                    <a href="/services.html" class="text-black hover:font-bold hover:scale-110">SERVICES</a>
+                    <a href="/case.html" class="text-black hover:font-bold hover:scale-110">CASE STUDY</a>
+                    <a href="/contact.html" class="text-black hover:font-bold hover:scale-110">CONNECT</a>
+                    <a href="/blog.html" class=" text-black hover:font-bold hover:scale-110">BLOG</a>
+                </div>
+            </div>
+            <div class="md:flex space-x-8">
+                <span id="btn-2" class="material-icons-outlined cursor-pointer hover:scale-110">
+
+                    phone_in_talk
+                </span>
+                <span id="btn-2" class="material-icons-outlined cursor-pointer hover:scale-110 ">
+                    mail
+                </span>
+            </div>
+        </div> -->
+
+
+
+
+        <div class="h-dvh container mx-auto md:max-w-6xl px-8 md:px-12 lg:px-16 flex  justify-start">
+            <div class="w-full md:w-1/2 flex flex-col justify-center pt-30 gap-y-9 md:gap-y-8 lg:gap-y-15">
+                <p
+                    class=" text-xl md:text-3xl lg:text-3xl font-extralight text-black leading-9 md:leading-9 lg:leading-10">
+                    Where innovative <span class="font-bold">ideas</span> meet <br> <span
+                        class="font-bold">impactful</span> designs to create<br>
+                    lasting
+                    impressions.</p>
+                <button
+                    class="btn me-auto rounded-sm border border-gray-200 shadow-sm hover:shadow-md text-black py-1 px-4 hover:font-semibold ">
+                    <a href="#" class="text-sm md:text-base">VIEW MORE</a>
+                </button>
+            </div>
         </div>
     </div>
-</nav>
+
+    <!-- about us -->
+    <section class="about py-20 md:py-35 lg:py-50">
+        <div class="container mx-auto px-4 md:px-6 lg:px-8">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8  text-center lg:max-w-4/5">
+                <h5 class="mb-6 md:mb-12 text-base font-bold">WHO WE ARE</h5>
+                <!-- <h1 class="text-center text-2xl md:text-4xl font-extrabold py-8 md:py-20">WHO WE ARE </h1> -->
+                <p class="text-xl md:text-2xl lg:text-3xl font-extralight leading-7 md:leading-8 lg:leading-9">A team of
+                    passionate creatives blending tradition with <span class="font-bold">innovation</span>, delivering
+                    solutions that matter.
+                    Every Ideas we craft is guided by purpose, insight, and attention to detail.
+                    Our work goes beyond <span class="font-bold">aesthetics</span>, creating meaningful experiences that
+                    connect with people.
+                    With clarity, creativity, and care.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- image -->
+    <section>
+        <div class="container mx-auto max-w-6xl overflow-hidden">
+            <div class=" flex">
+                <img src="assets/carousel.jpg" alt="" class="flex-shrink-0 rounded-xl object-fit-cover">
+                <!-- <video autoplay loop muted poster="preview.jpg">
+                    <source src="assets/WhatsApp Video 2026-01-30 at 1.25.40 PM.mp4" type="video/mp4">
+                </video> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- services -->
+    <section class="service py-20 md:py-35 lg:py-50">
+        <div>
+            <div
+                class="container mx-auto px-4 sm:px-6 lg:px-8 block md:grid lg:grid-cols-3 lg:grid-rows-2 md:grid-cols-2 md:grid-rows-2 gap-5">
+                <div class="text-start mb-4 md:mb-0 p-6 md:p-10">
+                    <h5 class="mb-2 md:mb-4 text-base font-bold">BRAND ALCHMEY</h5>
+                    <p class="text-lg md:text-2xl lg:text-3xl font-extralight leading-7 md:leading-8 lg:leading-9">
+                        Logos & Identities that resonate..
+                    </p>
+
+                </div>
+                <div class="text-start mb-4 md:mb-0 p-6 md:p-10">
+                    <h5 class="mb-2 md:mb-4 text-base font-bold">DIGITAL REALMS</h5>
+                    <p class="text-lg md:text-2xl lg:text-3xl font-extralight leading-7 md:leading-8 lg:leading-9">
+                        Bespoke Web & App Designs.
+                    </p>
+
+                </div>
+                <div class="text-start mb-4 md:mb-0 p-6 md:p-10">
+                    <h5 class="mb-2 md:mb-4 text-base font-bold">ENGAGEMENT STRATERGIES</h5>
+                    <p class="text-lg md:text-2xl lg:text-3xl font-extralight leading-7 md:leading-8 lg:leading-9">
+                        UI/UX Designs that captivate.
+                    </p>
+                </div>
+                <div class="text-start mb-4 md:mb-0 p-6 md:p-10">
+                    <h5 class="mb-2 md:mb-4 text-base font-bold">VISUAL NARRATIVES</h5>
+                    <p class="text-lg md:text-2xl lg:text-3xl font-extralight leading-7 md:leading-8 lg:leading-9">
+                        Film & Video Editing with soul.
+                    </p>
+                </div>
+                <div class="text-start mb-4 md:mb-0 p-6 md:p-10">
+                    <h5 class="mb-2 md:mb-4 text-base font-bold">ARTISTIC EXPRESSIONS</h5>
+                    <p class="text-lg md:text-2xl lg:text-3xl font-extralight leading-7 md:leading-8 lg:leading-9">
+                        Packaging, Labeling, and Merchandise.
+                    </p>
+                </div>
+                <div class="text-start mb-4 md:mb-0 p-6 md:p-10">
+                    <h5 class="mb-2 md:mb-4 text-base font-bold">PRINTED LEGACIES</h5>
+                    <p class="text-lg md:text-2xl lg:text-3xl font-extralight leading-7 md:leading-8 lg:leading-9">
+                        Books, Magazines, and timeless illustrations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- case study -->
+    <section class="case-study ">
+        <div class=" container mx-auto px-4 sm:px-6 lg:px-8">
+            <h5 class="text-black mb-6 md:mb-12 text-base text-center font-bold pb-10">CASE STUDIES
+            </h5>
+            <div class="bg-white shadow-xl rounded-md  max-w-5xl mx-auto flex mb-15 md:mb-25 lg:mb-35">
+                <div class="block lg:flex overflow-hidden">
+                    <div class="lg:w-3/5 bg-black rounded-l-md">
+                        <img src="assets/Love.png" alt="" class="object-fit-contain">
+                    </div>
+                    <div class="flex flex-col justify-center lg:w-2/5 p-4 md:py-14 lg:py-0">
+                        <div class="text-black flex flex-col md:px-10">
+                            <!-- <h5 class="mb-6 md:mb-12 text-sm md:text-l font-bold">Printed Legacies </h5> -->
+                            <p
+                                class="text-2xl md:text-3xl lg:text-3xl font-extralight leading-6 md:leading-8 lg:leading-9">
+                                Info Technology
+                            </p>
+                            <p
+                                class="text-xl md:text-2xl lg:text-xl text-gray-700 font-light leading-9 md:leading-8 pt-4 md:pt-10">
+                                We design intuitive UI/UX for web and app experiences that feel effortless and engaging.
+                                Our logo and brand identity systems give businesses a strong, consistent visual voice.
+                                Through strategic design and advertising.
+                            </p>
+                            <a href="#" class="text-end"><span
+                                    class="material-icons  md:py-9  text-end cursor-pointer text-gray-500 hover:text-black hover:translate-x-3 hover:transition duration-300 ease-in-out">arrow_forward</span>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="bg-white shadow-xl  max-w-5xl mx-auto">
+                <div class="block  lg:flex lg:flex-row-reverse overflow-hidden">
+                    <div class="lg:w-3/5 bg-black rounded-r-md">
+                        <img src="assets/Love.png" alt="" class="object-fit-contain">
+                    </div>
+                    <div class="flex flex-col justify-center lg:w-2/5 p-4 md:py-14 lg:py-0 rounded-md">
+                        <div class="text-black flex flex-col md:px-10">
+                            <!-- <h5 class="mb-6 md:mb-12 text-sm md:text-l font-bold">Printed Legacies </h5> -->
+                            <p
+                                class="md:text-end text-2xl md:text-3xl lg:text-3xl font-extralight leading-6 md:leading-8 lg:leading-9">
+                                Print Technology
+                            </p>
+                            <p
+                                class="md:text-end text-xl md:text-2xl lg:text-xl text-gray-700 font-light leading-9 md:leading-8 pt-4 md:pt-10">
+                                We design intuitive UI/UX for web and app experiences that feel effortless and engaging.
+                                Our logo and brand identity systems give businesses a strong, consistent visual voice.
+                                Through strategic design and advertising.
+                            </p>
+                            <a href="#" class="text-end"><span
+                                    class="material-icons  md:py-9  text-end cursor-pointer text-gray-500 hover:text-black hover:translate-x-3 hover:transition duration-300 ease-in-out">arrow_forward</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- our team -->
+    <section class="team z-0 mx-auto px-4 sm:px-6 lg:px-8  py-20 md:py-35 lg:py-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h5 class="text-center mb-2 md:mb-4 text-base font-bold">OUR TEAM</h5>
+            <p
+                class="text-center text-lg md:text-2xl lg:text-3xl pb-10 font-extralight leading-7 md:leading-8 lg:leading-9">
+                UI/UX Designs that captivate.
+            </p>
+            <div class="container overflow-hidden">
+                <div class="flex p-10 ">
+                    <div class="relative hidden md:block max-w-4xl mx-auto">
+
+                        <!-- Carousel Container -->
+                        <div id="carousel"
+                            class="md:flex overflow-x-auto scroll-smooth snap-x snap-mandatory space-x-6 px-12 hide-scrollbar">
+
+                            <!-- Card 1 -->
+                            <div
+                                class="card-1 overflow-y-hidden snap-start flex-shrink-0 w-70 h-80 bg-white rounded-md flex items-center justify-center text-xl font-bold">
+                                <img src="assets/WhatsApp Image 2026-01-12 at 1.48.35 PM.jpeg" alt=""
+                                    class="object-fit-contain">
+
+                            </div>
+                            <!-- Card 2 -->
+                            <div
+                                class="shadow-xl overflow-y-hidden snap-start flex-shrink-0 w-70 h-80 bg-white rounded-md flex items-center justify-center text-xl font-bold">
+                                <img src="assets/WhatsApp Image 2026-01-12 at 1.48.35 PM.jpeg" alt=""
+                                    class="object-fit-contain">
+
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div
+                                class="shadow-xl overflow-y-hidden snap-start flex-shrink-0 w-70 h-80 bg-white rounded-md flex items-center justify-center text-xl font-bold">
+                                <img src="assets/WhatsApp Image 2026-01-12 at 1.48.35 PM.jpeg" alt=""
+                                    class="object-fit-contain">
+
+                            </div>
+                            <!-- Card 4 -->
+                            <div
+                                class="shadow-xl overflow-y-hidden snap-start flex-shrink-0 w-70 h-80 bg-white rounded-md flex items-center justify-center text-xl font-bold">
+                                <img src="assets/WhatsApp Image 2026-01-12 at 1.48.35 PM.jpeg" alt=""
+                                    class="object-fit-contain">
+
+                            </div>
+                            <!-- Card 5 -->
+                            <div
+                                class="shadow-xl overflow-y-hidden snap-start flex-shrink-0 w-70 h-80 bg-white rounded-md flex items-center justify-center text-xl font-bold">
+                                <img src="assets/WhatsApp Image 2026-01-12 at 1.48.35 PM.jpeg" alt=""
+                                    class="object-fit-contain">
+
+                            </div>
+                            <!-- Card 6 -->
+                            <div
+                                class="shadow-xl overflow-y-hidden snap-start flex-shrink-0 w-70 h-80 bg-white rounded-md  flex items-center justify-center text-xl font-bold">
+                                <img src="assets/WhatsApp Image 2026-01-12 at 1.48.35 PM.jpeg" alt=""
+                                    class="object-fit-contain">
+
+                            </div>
+                            <!-- Add more cards as needed -->
+                        </div>
+                        <!-- Indicators -->
+                        <div class="flex justify-center mt-10 space-x-2">
+                            <button
+                                onclick="document.getElementById('carousel').scrollTo({left: 0, behavior: 'smooth'})"
+                                class="w-5 h-1.5 opacity-50 hover:opacity-100 cursor-pointer bg-gray-400 hover:bg-gray-600"></button>
+                            <button
+                                onclick="document.getElementById('carousel').scrollTo({left: 800, behavior: 'smooth'})"
+                                class="w-5 h-1.5 opacity-30 hover:opacity-100 cursor-pointer bg-gray-400 hover:bg-gray-600"></button>
+                            <button
+                                onclick="document.getElementById('carousel').scrollTo({left: 1600, behavior: 'smooth'})"
+                                class="w-5 h-1.5 opacity-20 hover:opacity-100 cursor-pointer bg-gray-400 hover:bg-gray-600"></button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- our blog -->
+    <section class="blog">
+        <div class=" container md:w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h5 class="text-black mb-6 md:mb-12 text-base text-center font-bold pb-10">OUR BLOG
+            </h5>
+            <div class="block md:grid md:grid-cols-2 lg:grid-cols-2 gap-20">
+                <div class="drop-shadow-xl pb-10 rounded-md bg-white">
+                    <!-- <video autoplay loop muted poster="preview.jpg" ">
+                <source src=" assets/WhatsApp Video 2026-01-08 at 6.07.43 PM.mp4" type="video/mp4">
+                    </video> -->
+                    <img src="assets/Blog-001.jpg.jpeg" alt="" class="rounded-t-md">
+                    <div class=" px-4">
+                        <p
+                            class="pt-10  text-2xl md:text-3xl lg:text-3xl font-extralight leading-6 md:leading-8 lg:leading-9">
+                            Awards
+                        </p>
+                        <p
+                            class="  text-xl md:text-2xl lg:text-xl text-gray-700 font-light leading-9 md:leading-8 pt-4 md:pt-10">
+                            Wolda (World Logo Design Annual) is a prestigious global platform that celebrates excellence
+                            and innovation in logo and brand identity design. It showcases the best work from designers
+                            worldwide,
+                        </p>
+                        <a href="/blog.html"><span
+                                class="material-icons mt-8 md:mt-10 md:ms-70 text-end cursor-pointer text-gray-500 hover:text-black hover:translate-x-3 hover:transition duration-300 ease-in-out">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="shadow-xl pb-10 rounded-md bg-white">
+                    <img src="assets/Blog 022.jpg.jpeg" alt="" class="rounded-t-md">
+                    <div class=" px-4">
+                        <p
+                            class="pt-10 text-2xl md:text-3xl lg:text-3xl font-extralight leading-6 md:leading-8 lg:leading-9">
+                            Contest
+                        </p>
+                        <p
+                            class="text-xl md:text-2xl lg:text-xl text-gray-700 font-light leading-9 md:leading-8 pt-4 md:pt-10">
+                            99designs is a global creative
+                            marketplace that connects businesses with talented designers to create high-quality visual
+                            designs.It allows brands to launch design contests or collaborate directly with designers.
+                        </p>
+                        <a href="/blog.html"><span
+                                class="material-icons mt-8 md:mt-10 md:ms-70 text-end cursor-pointer text-gray-500 hover:text-black hover:translate-x-3 hover:transition duration-300 ease-in-out">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- our clients -->
+    <section class="client py-20 md:py-35 lg:py-50">
+        <div class=" container mx-auto  px-4 sm:px-6 lg:px-8">
+            <h5 class="text-black mb-6 md:mb-12 text-base text-center font-bold pb-10">OUR CLIENTS
+            </h5>
+
+            <div class="max-w-5xl mx-auto">
+                <div
+                    class=" md:grid md:grid-cols-3 md:grid-rows-2 md:items-center file:md:justify-center gap-y-10  rounded-xl">
+
+                    <div class="rounded-xl">
+                        <img src="assets/New logo-008.png" alt="" class="W-40 mx-auto ">
+                    </div>
+                    <div class="rounded-xl">
+                        <img src="assets/New logo-004 (1).png" class="w-50 mx-auto">
+                    </div>
+                    <div class="rounded-xl">
+                        <img src="assets/New logo-005 (1).png" alt="" class="w-50 mx-auto">
+                    </div>
+                    <div class="rounded-xl">
+                        <img src="assets/New logo-009 (1).png" alt="" class="w-70 mx-auto">
+                    </div>
+                    <div class="rounded-xl">
+                        <img src="assets/New logo-001 (1).png" alt="" class="w-50 mx-auto">
+                    </div>
+                    <div class="rounded-xl">
+                        <img src="assets/New logo-011 (1).png" alt="" class="w-50 mx-auto">
+                    </div>
+                    <div class="rounded-xl">
+                        <img src="assets/New logo-010 (1).png" alt="" class="w-50 mx-auto">
+                    </div>
+                    <div class="rounded-xl">
+                        <img src="assets/New logo-006 (1).png" alt="" class="w-80 mx-auto">
+                    </div>
+                    <div class="rounded-xl">
+                        <img src="assets/New logo-003 (1).png" alt="" class="w-50 mx-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact us -->
+    <section class="contact px-4 sm:px-6 lg:px-8 pb-20 md:pb-35 lg:pb-50">
+        <div class="flex flex-col justify-center items-center">
+            <h5 class="text-black mb-6 md:mb-12text-base text-center font-bold pb-10">DREAM A REALITY
+            </h5>
+            <div class="block md:flex items-center gap-x-10 text-xl md:text-2xl lg:text-3xl font-extralight">
+                <p>We believe in turning <span class="font-bold">visions</span> into realities that truly represent your
+                    brand’s <span class="font-bold">voice</span>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="bg-black py-8 md:py-20  md:flex md:flex-col justify-center ">
+            <div class="text-white md:flex flex-col items-center justify-center gap-8 md:py-6">
+                <div>
+                    <img src="assets/logo design (2).svg" alt="" class="w-40">
+                </div>
+                <div class="block space-y-4 p-4 pb-8 md:flex space-x-8">
+                    <div class="relative overflow-hidden ">
+                        <a href="" class="hover:font-bold text-gray-400 tracking-wider">
+                            LINKEDIN</a>
+                        <span id="btn-2" class="material-icons-outlined cursor-pointer text-white hover:scale-110">
+                            phone_in_talk
+                        </span>
+                    </div>
+                    <a href="" class="hover:font-bold text-gray-400 tracking-wider">
+                        BEHANCE</a>
+                    <a href="" class="hover:font-bold text-gray-400 tracking-wider">
+                        DRIBBLE</a>
+                    <!-- <p class="hover:underline">FACEBOOK</p> -->
+                    <a href="" class="hover:font-bold text-gray-400 tracking-wider">
+                        PINTREST</a>
+                    <a href="" class="hover:font-bold text-gray-400 tracking-wider">
+                        INSTAGRAM</a>
+                    <!-- <P class="hover:underline">SKYPE</P> -->
+                </div>
+
+            </div>
+            <hr class="w-1/2 mx-auto text-gray-400 py-4 md:py-6 opacity-50">
+            <div class="foot">
+                <p class="text-sm text-center text-gray-400">© New Scarecrow Production. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    // Get button and menu elements
+    const menuBtn = document.getElementById("menu-btn");
+    const menu = document.getElementById("mobile-menu");
+    const btn = document.getElementById('btn-2');
+    const bttn = document.getElementById('btn-1');
+
+
+
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+
+    bttn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+
+    // Get the button
+    const scrollBtn = document.getElementById("scrollTopBtn");
+    const ScrollNav = document.getElementById("nav-tags");
+
+    // Show button when user scrolls down and navbar bg change
+    window.onscroll = function () {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            scrollBtn.style.display = "block";
+            ScrollNav.style.backgroundColor = "white";
+            menu.style.backgroundColor = "white";
+        } else {
+            scrollBtn.style.display = "none";
+            ScrollNav.style.backgroundColor = "transparent";
+            menu.style.backgroundColor = "transparent";
+
+        }
+    };
+
+    // Scroll to top when button is clicked 
+    scrollBtn.onclick = function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"   // smooth scrolling effect
+        });
+    };
+
+    // let scrollLeft = 0;
+    // setInterval(() => {
+    //     const carousel = document.getElementById('carousel');
+    //     scrollLeft += 100;
+    //     if (scrollLeft >= carousel.scrollWidth) {
+    //         scrollLeft = 0;
+    //     }
+    //     carousel.scrollTo({ left: scrollLeft, behavior: 'smooth' })
+    // }, 600);
+</script>
 
 </html>
