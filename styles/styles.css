@@ -32,11 +32,26 @@ body{
     font-family: "Barlow", sans-serif;
 }
 
+li a{
+    color: #474747;
+}
+.btn{
+    background-color: #EBEBEB;
+}
+.btn a{
+    color: #474747;
+}
 
+p,span{
+    color: #474747;
+}
+h5{
+    color: #111827;
+}
 /* home */
 .home-hero{
     background: fixed;
-    background-image: url("../assets/Banner-0001.png");
+    background-image: url("../assets/Banner\ 1.jpg.jpeg");
     background-size: cover;
 }
 /* section-3 */
